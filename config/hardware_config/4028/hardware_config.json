@@ -1,0 +1,92 @@
+{
+    "zaber_config": {
+        "port": "COM5",
+        "tube0": {
+            "x": 209.35,
+            "x_description": "The absolute distance from home to the x coordinate of tube 0"
+        },
+        "tube9": {
+            "x": 209.35,
+            "description": "The absolute distance from home to the x coordinate of tube 9"
+        },
+        "inner_spacing": {
+            "spacing": 25.85,
+            "description": "The spacing between tubes for all samples"
+        },
+        "upper_rail": {
+            "z": {
+                "high": 27,
+                "low": 64,
+                "return": 57,
+                "description": "high: starting position when removing tube, low: position when releasing tube"
+            },
+            "y": {
+                "in": 69,
+                "out": 50,
+                "description": "in: position when grabbing tube, out: starting position when about to grab tube"
+            }
+        },
+        "lower_rail": {
+            "z": {
+                "high": 104,
+                "low": 142,
+                "return": 135,
+                "description": "high: starting position when removing tube, low: position when releasing tube"
+            },
+            "y": {
+                "in": 19.5,
+                "out": 0,
+                "description": "in: position when grabbing tube, out: starting position when about to grab tube"
+            }
+        },
+        "Sony_clearance": 0,
+        "facs_location": {
+            "x": 443,
+            "y": 60,
+            "z": {
+                "high": 71.5,
+                "low": 115.5,
+                "description": "high: starting position when grabbing/dropping tube, low: final position"
+            },
+            "description": "The location inside the FACS"
+        },
+        "claw": {
+            "feedback": 3,
+            "feedback_description": "The expected difference to know when a tube was grabbed successfully.",
+            "max_position": 10,
+            "max_position_description": "The maximum distance the claw travel when there is nothing to grab.",
+            "tube_clearance": 5,
+            "tube_clearance_description": "The distance to close the claws prior to grabbing a tube at the tube housing"
+        },
+        "max_position": {
+            "x": 450,
+            "y": 75,
+            "z": 150,
+            "description": "The max the stage axis can move in mm"
+        },
+        "max_speed": {
+            "x": 300,
+            "y": 100,
+            "z": 100,
+            "gripper": 125,
+            "description": "The speed of the stages and gripper for all general movements"
+        }
+    },
+    "arduino_config": {
+        "port": "COM4",
+        "baudrate": 9600
+    },
+    "temperature": {
+        "upper_threshold": 8,
+        "lower_threshold": 1,
+        "threshold_description": "The upper and lower temperature limit in C",
+        "check_time": 10,
+        "check_time_description": "The temperature should be checked every check_time mins"
+    },
+    "agitation": {
+        "interval": 31,
+        "description": "Agitate tubes that are paused every 'interval' min",
+        "next_tube": 2,
+        "next_tube_description": "Start agitating the tube after 'next tube' min"
+    }
+}

@@ -1,0 +1,12 @@
+1. Update csv dir (done)
+2. NEW_PROFILE: sort - 1 (need to add this after a duplicate is made on the FACS from sort)(not used)
+3. NEW_SORT: profile - 1 (need to make this after the sort is renamed to profile and it is duplicated) (not used)
+4. OK_BTN: the one that comes as a pop up when the end condition is met (using the one from export now..should work) (works)
+5. What is the actual offset for sort gate E? Also need to add functionality for other sort modes (added)
+6. Actual offset for ultra purity (added)
+7. **REMOVE_BTN: Need a sort to be present to enable the btn and take the screenshot 
+8. Using the same close btn to close export and to close sort settings (should work) (works)
+9. **FINISH_BTN: When recording is completed
+10. **LOAD_COLLECTION_BTN: Need to update
+11. **SORT_AND_RECORD_BTN: Need to update
+12. **Refer to gate.py to see how to name the tubes and the exp and everything

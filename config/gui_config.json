@@ -1,0 +1,378 @@
+{
+    "GATE_ENCLOSE_PERCENTAGE": {
+        "percent": 1.01,
+        "description": "Approximate percentage of cells to be enclosed by the gate"
+    },
+    
+    "SORT_COUNT":{
+        "count": 1200,
+        "description": "Number of cells to sort and collect. Sorting will end after meeting this condition"
+    },
+
+    "SORT_TIMEOUT":{
+        "seconds": 600,
+        "description": "Maximum amount of time to spend on sorting in seconds"
+    },
+
+    "PROFILE_COUNT":{
+        "count": 50000,
+        "description": "Amount of cells to profile"
+    },
+
+    "SAMPLE_PRESSURE":{
+        "number": 5,
+        "description": "Sample pressure to use for samples. Range 4-6 recommended."
+    },
+
+    "PRESSURE_LOOKUP_TABLE":{
+        "pressures": [4,5,6],
+        "ranges":[0,500,1500,5000],
+        "timeouts":[740,570,420],
+        "description": "Based on event counts, the adjustment to the pressure and sort timeout that is needed"
+    },
+
+    "GATE_CSV_DIR": {
+        "name": "check_directory.png",
+        "location": "UPDATE WITH DIRECTORY",
+        "description": "The local folder directory where exported gating data is stored."
+    },
+    
+    "BLUE_TUBE_ICON":{
+        "name": "blue_tube_icon.png",
+        "description": "clicked to select the current sort"
+    },
+
+    "SCROLL_BAR":{
+        "name": "scroll_bar.png",
+        "description": "arrow of a scroll bar to indicate its existence"
+    },
+
+    "SCROLL_BAR_BOTTOM":{
+        "name": "scroll_bar_bottom.png",
+        "description": "scroll bar at bottom to identify it is at the bottom"
+    },
+
+    "SAMPLE_PRESSURE_IMG":{
+        "name": "sample_pressure.png",
+        "description": "Sample pressure image, offset is the regular spacing between values (px), 1_offset is the offset from the dropdown menu to 1",
+        "1_offset":204,
+        "spacing":20
+    },
+
+    "ERROR_MSG":{
+        "name": "error.png",
+        "description": "error message from the sony"
+    },
+
+    "EMPTY_ERROR":{
+        "name": "empty_error.png",
+        "description": "sample empty error"
+    },
+
+    "DUPLICATE_BTN":{
+        "name": "duplicate_btn.png",
+        "rgb": [40,40,40],
+        "description": "the duplicate button on the taskbar"
+    },
+
+    "CHECKED_TUBE_BTN":{
+        "name": "tube_checked.png",
+        "description": "checked tube"
+    },
+
+    "COUNTS":{
+        "name": "counts.png",
+        "description": "sort counts"
+    },
+
+     "EVENT_COUNT":{
+        "name": "event_count.png",
+        "description": "event counts"
+    },
+
+    "EVENT_RATE":{
+        "name": "event_rate.png",
+        "description": "eps rate"
+    },
+
+    "STOP_VALUE":{
+        "name": "stop_value.png",
+        "description": "Amount of events to profile before stopping"
+    },
+
+    "NUM_GATES":{
+        "name": "num_gates.png",
+        "description":"used to find the number of gates"
+    },
+
+    "SORT_METHOD":{
+        "name": "sort_method.png",
+        "description": "Set sort method from 2 way tube to 96 wp",
+        "y_offset": -40
+    },
+
+    "96wp":{
+        "name": "96wp.png",
+        "description": "Select 96 well plate option for sort method"
+    },
+
+    "SORT_TIMEOUT_BTN":{
+        "name": "sort_timeout.png",
+        "description": "sort timeout field"
+    },
+
+    "ASSIGN_BTN":{
+        "name": "assign_btn.png",
+        "rgb": [40,40,40],
+        "description": "the assign button on the taskbar"
+    },
+
+    "NEXT_TUBE":{
+        "name": "next_tube.png",
+        "description": "the next tube button on the taskbar (duplicates + assigns new tube)"
+    },
+
+    "PREV_SORT" : {
+        "name": "prev_sort.png",
+        "description": "clicked on to duplicate and create a new sort"
+
+    },
+
+    "NEW_PROFILE" : {
+        "name": "new_profile.png",
+        "description": "clicked on to rename the new profile that is just created"
+
+    },
+
+    "NEW_SORT" : {
+        "name": "new_sort.png",
+        "description": "clicked on to rename the new sort that is just created, after the profiling step"
+
+    },
+
+    "START_BTN" : {
+        "name": "start_btn.png",
+        "rgb": [44,156,31],
+        "description": "clicked to start the program, the rgb value is used to check if the start button is available (enabled)"
+
+    },
+
+    "SORT_NAME" : {
+        "name": "sort_name.png",
+        "description": "Identifier for tubes that have been sorted"
+
+    },
+
+    "SORT_NAME_INACTIVE" : {
+        "name": "sort_name_inactive.png",
+        "description": "Identifier for tubes that have been sorted from a previous experiment"
+
+    },
+
+    "RECORD_BTN" : {
+        "name": "record_btn.png",
+        "rgb": [224,173,158],
+        "description": "clicked to record the profiling (disabled)"
+
+    },
+
+    "STOP_BTN" : {
+        "name": "stop_btn.png",
+        "description": "clicked to stop recording the profiling (disabled)"
+
+    },
+
+    "OK_BTN" : {
+        "name": "ok_btn.png",
+        "description": "clicked when the end condition is met (when there is a pop up) and when export is complete"
+
+    },
+
+    "ALL_EVENTS_UNSEL" : {
+        "name": "all_events_unsel.png",
+        "description":"All events img when it is not selected"
+    },
+
+    "ALL_EVENTS_SEL" : {
+        "name": "all_events_sel.png",
+        "description":"All events img when it is selected"
+    },
+
+    "FOURTH_GRAPH" : {
+        "offset": 420,
+        "description": "How far away in x/y is the fourth gate from All Events"
+
+    },
+
+    "WORKSHEET_TOOLS" : {
+        "name": "worksheet_tools.png",
+        "description": "clicked to return to the worksheet tools tab"
+
+    },
+
+    "EXPORT_CSV_BTN" : {
+        "name": "export_csv_btn.png",
+        "rgb": [39,39,39],
+        "description": "clicked to make the export window pop up"
+
+    },
+
+    "FILEPATH" : {
+        "name": "filepath.png",
+        "description": "box to enter filepath",
+        "y_offset": 25
+    },
+
+    "OUTPUT_PATH" : {
+        "name": "output_path.png",
+        "description": "the 3 dots to pop up the save file window"
+
+    },
+    
+    "STOP_CONDITION" : {
+        "name": "stop_condition.png",
+        "description": "finds the dropdown box to toggle the recording stop condition",
+        "x_offset": 50,
+        "event_count_offset": 60,
+        "none_offset": 20
+    },
+
+    "SAVE_CSV" : {
+        "name": "save_csv.png",
+        "description": "clicked to save the csv file"
+
+    },
+
+    "EXPORT_BTN" : {
+        "name": "export_btn.png",
+        "description": "button that says export"
+    },
+
+    "EXPERIMENT_BTN" : {
+        "name": "experiment.png",
+        "description": "button that says experiment"
+
+    },
+
+    "EXPERIMENT_ICON" : {
+        "name": "experiment_icon.png",
+        "description": "button that says experiment"
+
+    },
+
+    "TERMINAL" : {
+        "name": "git.png",
+        "description": "terminal tab"
+
+    },
+
+    "EXPERIMENT_BAR" : {
+        "name": "experiment_bar.png",
+        "description": "active experiment signifier"
+
+    },
+
+    "CLOSE_EXPORT" : {
+        "name": "close_export.png",
+        "description": "close the export pop-up (export completed)"
+
+    },
+
+    "CLOSE_WORKSHEET" : {
+        "name": "close_worksheet.png",
+        "description": "close the working worksheet to allow gatevertextool to run"
+
+    },
+
+    "YES_BTN" : {
+        "name": "yes_btn.png",
+        "description": "close the working worksheet to allow gatevertextool to run"
+
+    },
+
+    "SORT_SETTINGS_BTN" : {
+        "name": "sortsettings_btn.png",
+        "description": "clicked when to initialize sorting settings"
+
+    },
+
+    "TOP_CORNER_WELL":{
+        "name": "top_corner_well.png",
+        "description": "The screen grab of the top corner of the well used to calibrate for all locations",
+        "offset": 25
+    },
+    
+    "Sort_Gate":{
+        "name": "sort_gate.png",
+        "description": "used to find the sort_gate dropdown menu and click on the 4th gate using y_offset",
+        "y_offset": 100
+    },
+
+    "Sort_Mode":{
+        "name": "sort_mode.png",
+        "description": "used to find the Sort Mode dropdown menu (can be updated as an offset from sort gate"
+    },
+
+    "Ultra_Purity":{
+        "y_offset": 14,
+        "description": "the offset is how far the option is in the dropdown list"
+    },
+
+    "Stop_Count":{
+        "name": "stop_count.png",
+        "description": "used to find the stop_count text box"
+    },
+
+    "ADD_BTN":{
+        "name": "add_btn.png",
+        "description": "clicked to create the new profile"
+    },
+
+    "SortID_Header":{
+        "name": "sortID_header.png",
+        "description": "used to locate the previous sort, which should be removed"
+    },
+
+    "REMOVE_BTN":{
+        "name": "remove_btn.png",
+        "description": "cliccloked to remove the previous sort"
+    },
+    
+    "Desired_Sorting_Param":{
+        "name": "setup_status.png",
+        "description": "triple check all the parameters are input correctly"
+    },
+
+    "CLOSE_BTN":{
+        "name": "close_btn.png",
+        "description": "clicked to close sorting settings"
+    },
+
+    "LOAD_COLLECTION_BTN":{
+        "name": "load_collection_btn.png",
+        "description": "clicked to load the collection"
+    },
+
+    "SORT_AND_RECORD_BTN":{
+        "name": "sort_and_record_btn.png",
+        "description": "clicked to start sort and record the progress"
+    },
+
+    "FINISH_BTN":{
+        "name": "finish_btn.png",
+        "description": "clicked to finish the sorting"
+    },
+
+    "WAIT_TIMES":{
+        "short": 1,
+        "long": 2,
+        "extended": 3,
+        "cells_appear": 20,
+        "description": "The different wait times in s"
+    },
+
+    "DATASET":{
+        "x": "FITC-A-Compensated",
+        "y": "BSC-A"
+    }
+}

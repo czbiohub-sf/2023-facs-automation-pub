@@ -1,0 +1,47 @@
+{
+        "BOT_TOKEN": {
+            "autofacs_bot1": "UPDATE WITH BOT TOKEN",
+            "autofacs_bot2": "UPDATE WITH BOT TOKEN",
+            "description": "This token provided by Slack is unique for each bot and should be maintained private."
+        },
+        "Channel_ID": {
+            "autofacs_channel1": "UPDATE WITH CHANNEL ID",
+            "autofacs_channel2": "UPDATE WITH CHANNEL ID",
+            "description": "The Channel ID provided by Slack found in the channel details"
+        },
+        "FACS_startup": {
+            "message": "Starting automated FACS sort",
+            "description": "Slack message to the FACS channel on startup of an automated sort"
+        },
+        "FACS_complete": {
+            "message": "Automated FACS sort is complete!",
+            "description": "Slack message to the FACS channel when the automated sort is complete"
+        },
+        "FACS_error": {
+            "message": "@channel ERROR! FACS AUTOMATION ERROR! HELP!",
+            "description": "Slack message to warn the channel that something is wrong with the system"
+        },
+        "FACS_pause": {
+            "message": "Automation is paused. Please check on me!",
+            "description": "Slack message to alert that the system was paused and probably has a problem"
+        },
+        "FACS_resume": {
+            "message": "Automation is resumed",
+            "description": "Slack message to notify that the pause is cleared and the automation is resumed"
+        },
+        "FACS_stopped": {
+            "message": "Automated FACS sorting stopped by a user. F7 was pressed.",
+            "dsecription": "Slack message when the system is actively stopped by the user"
+        },
+        "FACS_Zaber_error": {
+            "message": "@channel ERROR! FACS ZABER ROBOT DIDN'T MOVE CORRECTLY! HELP!",
+            "description": "Slack message to notify the channel there is a problem with the Zaber stage"
+        },
+        "Member_ID": {
+            "user1": "<@UPDATE WITH USER ID>",
+            "user2": "<@UPDATE WITH USER ID>",
+            "user3": "<@UPDATE WITH USER ID>",
+            "user4": "<@UPDATE WITH USER ID>",
+            "description": "Slack member ID for mentioning specific person"
+        }
+}
