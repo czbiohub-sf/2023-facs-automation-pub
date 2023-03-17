@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AEDR-8300
+D Subminiature Reflective Optical Sensor, SMD-package with PCB-cutout
+K Reflective Optical Sensor Opto
+F http://www.everlight.com/file/ProductFile/ITR8307.pdf
+$ENDCMP
+#
+$CMP BPR-105
+D Subminiature Reflective Optical Sensor, SMD-package with PCB-cutout
+K Reflective Optical Sensor Opto
+F http://www.ystone.com.tw/en/data/goods/IRPT/Photo%20Interrupters-Reflective%20Type.pdf
+$ENDCMP
+#
+#End Doc Library

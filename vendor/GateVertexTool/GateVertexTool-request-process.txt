@@ -1,0 +1,4 @@
+The GateVertexTool is provided by Sony Biotechnology.
+
+Requests to access the GateVertexTool may be made to SONY Biotechnology via the following 
+URL: https://go.sonybiotechnology.com/gate-vertex.html

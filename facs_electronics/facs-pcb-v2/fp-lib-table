@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name Socket_Arduino_Mega)(type KiCad)(uri "$(KIPRJMOD)/Socket_Arduino_Mega.pretty")(options "")(descr ""))
+  (lib (name facs-motors)(type KiCad)(uri ${KIPRJMOD}/facs-motors.pretty)(options "")(descr ""))
+  (lib (name facs-pcb-v2)(type KiCad)(uri ${KIPRJMOD}/facs-pcb-v2.pretty)(options "")(descr ""))
+)

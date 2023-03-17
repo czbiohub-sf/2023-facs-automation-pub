@@ -1,0 +1,3530 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	1605 1730 1100 1730
+Wire Wire Line
+	1100 1730 1100 1735
+Wire Wire Line
+	1605 1930 1465 1930
+Text Label 1465 1930 0    39   ~ 0
+DIR
+Wire Wire Line
+	1955 2380 1900 2380
+Connection ~ 1900 2380
+Wire Wire Line
+	1900 2380 1855 2380
+Wire Wire Line
+	2405 1580 2630 1580
+Wire Wire Line
+	2405 1730 2630 1730
+Text Label 2630 1580 2    39   ~ 0
+MA1
+Text Label 2630 1730 2    39   ~ 0
+MB1
+Wire Wire Line
+	2005 1095 2005 1295
+Wire Wire Line
+	1905 1380 1905 1295
+Wire Wire Line
+	1905 1295 2005 1295
+Connection ~ 2005 1295
+Wire Wire Line
+	2005 1295 2005 1380
+Connection ~ 2005 1095
+Wire Wire Line
+	2740 1930 2740 2080
+Wire Wire Line
+	2405 1930 2740 1930
+Wire Wire Line
+	2405 2080 2740 2080
+Connection ~ 2740 2080
+Wire Wire Line
+	2740 2080 2740 2180
+Wire Wire Line
+	2405 2180 2740 2180
+Connection ~ 2740 2180
+Wire Wire Line
+	2740 2180 2740 2270
+Wire Wire Line
+	2740 2470 2740 2515
+Text Notes 2095 2465 0    30   ~ 0
+Current limiting resistor\nJumper to disable\nImax = 0.1V / Rsense
+Text Notes 2160 1000 0    39   ~ 0
+nFAULT (open-drain) outputs are daisy-chained together\nto a singular pull-up on the microcontroller.
+Wire Wire Line
+	3660 1735 3155 1735
+Wire Wire Line
+	3155 1735 3155 1740
+Wire Wire Line
+	3660 1935 3520 1935
+Text Label 3520 1935 0    39   ~ 0
+DIR
+Wire Wire Line
+	4010 2385 3955 2385
+Connection ~ 3955 2385
+Wire Wire Line
+	3955 2385 3910 2385
+Wire Wire Line
+	4460 1585 4685 1585
+Wire Wire Line
+	4460 1735 4685 1735
+Text Label 4685 1585 2    39   ~ 0
+MA2
+Text Label 4685 1735 2    39   ~ 0
+MB2
+Wire Wire Line
+	4060 1100 4060 1300
+Wire Wire Line
+	3960 1385 3960 1300
+Wire Wire Line
+	3960 1300 4060 1300
+Connection ~ 4060 1300
+Wire Wire Line
+	4060 1300 4060 1385
+Wire Wire Line
+	3295 1100 3645 1100
+Connection ~ 4060 1100
+Connection ~ 3645 1100
+Wire Wire Line
+	3645 1100 4060 1100
+Wire Wire Line
+	4795 1935 4795 2085
+Wire Wire Line
+	4460 1935 4795 1935
+Wire Wire Line
+	4460 2085 4795 2085
+Connection ~ 4795 2085
+Wire Wire Line
+	4795 2085 4795 2185
+Wire Wire Line
+	4460 2185 4795 2185
+Connection ~ 4795 2185
+Wire Wire Line
+	4795 2185 4795 2275
+Wire Wire Line
+	4795 2475 4795 2520
+Wire Wire Line
+	1605 1830 1275 1830
+Text Label 1275 1830 0    39   ~ 0
+FAULT
+Wire Wire Line
+	5545 1720 5040 1720
+Wire Wire Line
+	5040 1720 5040 1725
+Wire Wire Line
+	5545 1920 5405 1920
+Text Label 5405 1920 0    39   ~ 0
+DIR
+Wire Wire Line
+	5895 2370 5840 2370
+Connection ~ 5840 2370
+Wire Wire Line
+	5840 2370 5795 2370
+Wire Wire Line
+	6345 1570 6570 1570
+Wire Wire Line
+	6345 1720 6570 1720
+Text Label 6570 1570 2    39   ~ 0
+MA3
+Text Label 6570 1720 2    39   ~ 0
+MB3
+Wire Wire Line
+	5945 1085 5945 1285
+Wire Wire Line
+	5845 1370 5845 1285
+Wire Wire Line
+	5845 1285 5945 1285
+Connection ~ 5945 1285
+Wire Wire Line
+	5945 1285 5945 1370
+Wire Wire Line
+	5180 1085 5530 1085
+Connection ~ 5945 1085
+Connection ~ 5530 1085
+Wire Wire Line
+	5530 1085 5945 1085
+Wire Wire Line
+	6680 1920 6680 2070
+Wire Wire Line
+	6345 1920 6680 1920
+Wire Wire Line
+	6345 2070 6680 2070
+Connection ~ 6680 2070
+Wire Wire Line
+	6680 2070 6680 2170
+Wire Wire Line
+	6345 2170 6680 2170
+Connection ~ 6680 2170
+Wire Wire Line
+	6680 2170 6680 2260
+Wire Wire Line
+	6680 2460 6680 2505
+Wire Wire Line
+	3660 1835 3330 1835
+Text Label 3330 1835 0    39   ~ 0
+FAULT
+Wire Wire Line
+	5545 1820 5215 1820
+Text Label 5215 1820 0    39   ~ 0
+FAULT
+Wire Wire Line
+	7580 1715 7075 1715
+Wire Wire Line
+	7075 1715 7075 1720
+Wire Wire Line
+	7580 1915 7440 1915
+Text Label 7440 1915 0    39   ~ 0
+DIR
+Wire Wire Line
+	7930 2365 7875 2365
+Connection ~ 7875 2365
+Wire Wire Line
+	7875 2365 7830 2365
+Wire Wire Line
+	8380 1565 8605 1565
+Wire Wire Line
+	8380 1715 8605 1715
+Text Label 8605 1565 2    39   ~ 0
+MA4
+Text Label 8605 1715 2    39   ~ 0
+MB4
+Wire Wire Line
+	7980 1080 7980 1280
+Wire Wire Line
+	7880 1365 7880 1280
+Wire Wire Line
+	7880 1280 7980 1280
+Connection ~ 7980 1280
+Wire Wire Line
+	7980 1280 7980 1365
+Wire Wire Line
+	7215 1080 7565 1080
+Connection ~ 7980 1080
+Connection ~ 7565 1080
+Wire Wire Line
+	7565 1080 7980 1080
+Wire Wire Line
+	7565 1280 7215 1280
+Wire Wire Line
+	8715 1915 8715 2065
+Wire Wire Line
+	8380 1915 8715 1915
+Wire Wire Line
+	8380 2065 8715 2065
+Connection ~ 8715 2065
+Wire Wire Line
+	8715 2065 8715 2165
+Wire Wire Line
+	8380 2165 8715 2165
+Connection ~ 8715 2165
+Wire Wire Line
+	8715 2165 8715 2255
+Wire Wire Line
+	8715 2455 8715 2500
+Wire Wire Line
+	9635 1720 9130 1720
+Wire Wire Line
+	9130 1720 9130 1725
+Wire Wire Line
+	9635 1920 9495 1920
+Text Label 9495 1920 0    39   ~ 0
+DIR
+Wire Wire Line
+	9985 2370 9930 2370
+Connection ~ 9930 2370
+Wire Wire Line
+	9930 2370 9885 2370
+Wire Wire Line
+	10435 1570 10660 1570
+Wire Wire Line
+	10435 1720 10660 1720
+Text Label 10660 1570 2    39   ~ 0
+MA5
+Text Label 10660 1720 2    39   ~ 0
+MB5
+Wire Wire Line
+	10035 1085 10035 1285
+Wire Wire Line
+	9935 1370 9935 1285
+Wire Wire Line
+	9935 1285 10035 1285
+Connection ~ 10035 1285
+Wire Wire Line
+	10035 1285 10035 1370
+Wire Wire Line
+	9270 1085 9620 1085
+Connection ~ 10035 1085
+Connection ~ 9620 1085
+Wire Wire Line
+	9620 1085 10035 1085
+Wire Wire Line
+	10770 1920 10770 2070
+Wire Wire Line
+	10435 1920 10770 1920
+Wire Wire Line
+	10435 2070 10770 2070
+Connection ~ 10770 2070
+Wire Wire Line
+	10770 2070 10770 2170
+Wire Wire Line
+	10435 2170 10770 2170
+Connection ~ 10770 2170
+Wire Wire Line
+	10770 2170 10770 2260
+Wire Wire Line
+	10770 2460 10770 2505
+Wire Wire Line
+	7580 1815 7250 1815
+Text Label 7250 1815 0    39   ~ 0
+FAULT
+Wire Wire Line
+	9635 1820 9305 1820
+Text Label 9305 1820 0    39   ~ 0
+FAULT
+Wire Wire Line
+	1660 4010 1155 4010
+Wire Wire Line
+	1155 4010 1155 4015
+Wire Wire Line
+	1660 4210 1520 4210
+Text Label 1520 4210 0    39   ~ 0
+DIR
+Wire Wire Line
+	2010 4660 1955 4660
+Connection ~ 1955 4660
+Wire Wire Line
+	1955 4660 1910 4660
+Wire Wire Line
+	2460 3860 2685 3860
+Wire Wire Line
+	2460 4010 2685 4010
+Text Label 2685 3860 2    39   ~ 0
+MA6
+Text Label 2685 4010 2    39   ~ 0
+MB6
+Wire Wire Line
+	2060 3375 2060 3575
+Wire Wire Line
+	1960 3660 1960 3575
+Wire Wire Line
+	1960 3575 2060 3575
+Connection ~ 2060 3575
+Wire Wire Line
+	2060 3575 2060 3660
+Wire Wire Line
+	1295 3375 1645 3375
+Connection ~ 2060 3375
+Connection ~ 1645 3375
+Wire Wire Line
+	1645 3375 2060 3375
+Wire Wire Line
+	1645 3575 1295 3575
+Wire Wire Line
+	2795 4210 2795 4360
+Wire Wire Line
+	2460 4210 2795 4210
+Wire Wire Line
+	2460 4360 2795 4360
+Connection ~ 2795 4360
+Wire Wire Line
+	2795 4360 2795 4460
+Wire Wire Line
+	2460 4460 2795 4460
+Connection ~ 2795 4460
+Wire Wire Line
+	2795 4460 2795 4550
+Wire Wire Line
+	2795 4750 2795 4795
+Wire Wire Line
+	3715 4015 3210 4015
+Wire Wire Line
+	3210 4015 3210 4020
+Wire Wire Line
+	3715 4215 3575 4215
+Text Label 3575 4215 0    39   ~ 0
+DIR
+Wire Wire Line
+	4065 4665 4010 4665
+Connection ~ 4010 4665
+Wire Wire Line
+	4010 4665 3965 4665
+Wire Wire Line
+	4515 3865 4740 3865
+Wire Wire Line
+	4515 4015 4740 4015
+Text Label 4740 3865 2    39   ~ 0
+MA7
+Text Label 4740 4015 2    39   ~ 0
+MB7
+Wire Wire Line
+	4115 3380 4115 3580
+Wire Wire Line
+	4015 3665 4015 3580
+Wire Wire Line
+	4015 3580 4115 3580
+Connection ~ 4115 3580
+Wire Wire Line
+	4115 3580 4115 3665
+Wire Wire Line
+	3350 3380 3700 3380
+Connection ~ 4115 3380
+Connection ~ 3700 3380
+Wire Wire Line
+	3700 3380 4115 3380
+Wire Wire Line
+	3700 3580 3350 3580
+Wire Wire Line
+	4850 4215 4850 4365
+Wire Wire Line
+	4515 4215 4850 4215
+Wire Wire Line
+	4515 4365 4850 4365
+Connection ~ 4850 4365
+Wire Wire Line
+	4850 4365 4850 4465
+Wire Wire Line
+	4515 4465 4850 4465
+Connection ~ 4850 4465
+Wire Wire Line
+	4850 4465 4850 4555
+Wire Wire Line
+	4850 4755 4850 4800
+Wire Wire Line
+	1660 4110 1330 4110
+Text Label 1330 4110 0    39   ~ 0
+FAULT
+Wire Wire Line
+	5600 4000 5095 4000
+Wire Wire Line
+	5095 4000 5095 4005
+Wire Wire Line
+	5600 4200 5460 4200
+Text Label 5460 4200 0    39   ~ 0
+DIR
+Wire Wire Line
+	5950 4650 5895 4650
+Connection ~ 5895 4650
+Wire Wire Line
+	5895 4650 5850 4650
+Wire Wire Line
+	6400 3850 6625 3850
+Wire Wire Line
+	6400 4000 6625 4000
+Text Label 6625 3850 2    39   ~ 0
+MA8
+Text Label 6625 4000 2    39   ~ 0
+MB8
+Wire Wire Line
+	6000 3365 6000 3565
+Wire Wire Line
+	5900 3650 5900 3565
+Wire Wire Line
+	5900 3565 6000 3565
+Connection ~ 6000 3565
+Wire Wire Line
+	6000 3565 6000 3650
+Wire Wire Line
+	5235 3365 5585 3365
+Connection ~ 6000 3365
+Connection ~ 5585 3365
+Wire Wire Line
+	5585 3365 6000 3365
+Wire Wire Line
+	6735 4200 6735 4350
+Wire Wire Line
+	6400 4200 6735 4200
+Wire Wire Line
+	6400 4350 6735 4350
+Connection ~ 6735 4350
+Wire Wire Line
+	6735 4350 6735 4450
+Wire Wire Line
+	6400 4450 6735 4450
+Connection ~ 6735 4450
+Wire Wire Line
+	6735 4450 6735 4540
+Wire Wire Line
+	6735 4740 6735 4785
+Wire Wire Line
+	3715 4115 3385 4115
+Text Label 3385 4115 0    39   ~ 0
+FAULT
+Wire Wire Line
+	5600 4100 5270 4100
+Text Label 5270 4100 0    39   ~ 0
+FAULT
+Wire Wire Line
+	7635 3995 7130 3995
+Wire Wire Line
+	7130 3995 7130 4000
+Wire Wire Line
+	7635 4195 7495 4195
+Text Label 7495 4195 0    39   ~ 0
+DIR
+Wire Wire Line
+	7985 4645 7930 4645
+Connection ~ 7930 4645
+Wire Wire Line
+	7930 4645 7885 4645
+Wire Wire Line
+	8435 3845 8660 3845
+Wire Wire Line
+	8435 3995 8660 3995
+Text Label 8660 3845 2    39   ~ 0
+MA9
+Text Label 8660 3995 2    39   ~ 0
+MB9
+Wire Wire Line
+	8035 3360 8035 3560
+Wire Wire Line
+	7935 3645 7935 3560
+Wire Wire Line
+	7935 3560 8035 3560
+Connection ~ 8035 3560
+Wire Wire Line
+	8035 3560 8035 3645
+Wire Wire Line
+	7270 3360 7620 3360
+Connection ~ 8035 3360
+Connection ~ 7620 3360
+Wire Wire Line
+	7620 3360 8035 3360
+Wire Wire Line
+	7620 3560 7270 3560
+Wire Wire Line
+	8770 4195 8770 4345
+Wire Wire Line
+	8435 4195 8770 4195
+Wire Wire Line
+	8435 4345 8770 4345
+Connection ~ 8770 4345
+Wire Wire Line
+	8770 4345 8770 4445
+Wire Wire Line
+	8435 4445 8770 4445
+Connection ~ 8770 4445
+Wire Wire Line
+	8770 4445 8770 4535
+Wire Wire Line
+	8770 4735 8770 4780
+Wire Wire Line
+	9690 4000 9185 4000
+Wire Wire Line
+	9185 4000 9185 4005
+Wire Wire Line
+	9690 4200 9550 4200
+Text Label 9550 4200 0    39   ~ 0
+DIR
+Wire Wire Line
+	10040 4650 9985 4650
+Connection ~ 9985 4650
+Wire Wire Line
+	9985 4650 9940 4650
+Wire Wire Line
+	10490 3850 10715 3850
+Wire Wire Line
+	10490 4000 10715 4000
+Text Label 10715 3850 2    39   ~ 0
+MA10
+Text Label 10715 4000 2    39   ~ 0
+MB10
+Wire Wire Line
+	10090 3365 10090 3565
+Wire Wire Line
+	9990 3650 9990 3565
+Wire Wire Line
+	9990 3565 10090 3565
+Connection ~ 10090 3565
+Wire Wire Line
+	10090 3565 10090 3650
+Wire Wire Line
+	9325 3365 9675 3365
+Connection ~ 10090 3365
+Connection ~ 9675 3365
+Wire Wire Line
+	9675 3365 10090 3365
+Wire Wire Line
+	10825 4200 10825 4350
+Wire Wire Line
+	10490 4200 10825 4200
+Wire Wire Line
+	10490 4350 10825 4350
+Connection ~ 10825 4350
+Wire Wire Line
+	10825 4350 10825 4450
+Wire Wire Line
+	10490 4450 10825 4450
+Connection ~ 10825 4450
+Wire Wire Line
+	10825 4450 10825 4540
+Wire Wire Line
+	10825 4740 10825 4785
+Wire Wire Line
+	7635 4095 7305 4095
+Text Label 7305 4095 0    39   ~ 0
+FAULT
+Wire Wire Line
+	9690 4100 9360 4100
+Text Label 9360 4100 0    39   ~ 0
+FAULT
+Wire Wire Line
+	1690 6740 1185 6740
+Wire Wire Line
+	1185 6740 1185 6745
+Wire Wire Line
+	1690 6940 1550 6940
+Text Label 1550 6940 0    39   ~ 0
+DIR
+Wire Wire Line
+	2040 7390 1985 7390
+Connection ~ 1985 7390
+Wire Wire Line
+	1985 7390 1940 7390
+Wire Wire Line
+	2490 6590 2715 6590
+Wire Wire Line
+	2490 6740 2715 6740
+Text Label 2715 6590 2    39   ~ 0
+MA11
+Text Label 2715 6740 2    39   ~ 0
+MB11
+Wire Wire Line
+	2090 6105 2090 6305
+Wire Wire Line
+	1990 6390 1990 6305
+Wire Wire Line
+	1990 6305 2090 6305
+Connection ~ 2090 6305
+Wire Wire Line
+	2090 6305 2090 6390
+Wire Wire Line
+	1325 6105 1675 6105
+Connection ~ 2090 6105
+Connection ~ 1675 6105
+Wire Wire Line
+	1675 6105 2090 6105
+Wire Wire Line
+	1675 6305 1325 6305
+Wire Wire Line
+	2825 6940 2825 7090
+Wire Wire Line
+	2490 6940 2825 6940
+Wire Wire Line
+	2490 7090 2825 7090
+Connection ~ 2825 7090
+Wire Wire Line
+	2825 7090 2825 7190
+Wire Wire Line
+	2490 7190 2825 7190
+Connection ~ 2825 7190
+Wire Wire Line
+	2825 7190 2825 7280
+Wire Wire Line
+	2825 7480 2825 7525
+Wire Wire Line
+	3745 6745 3240 6745
+Wire Wire Line
+	3240 6745 3240 6750
+Wire Wire Line
+	3745 6945 3605 6945
+Text Label 3605 6945 0    39   ~ 0
+DIR
+Wire Wire Line
+	4095 7395 4040 7395
+Connection ~ 4040 7395
+Wire Wire Line
+	4040 7395 3995 7395
+Wire Wire Line
+	4545 6595 4770 6595
+Wire Wire Line
+	4545 6745 4770 6745
+Text Label 4770 6595 2    39   ~ 0
+MA12
+Text Label 4770 6745 2    39   ~ 0
+MB12
+Wire Wire Line
+	4145 6110 4145 6310
+Wire Wire Line
+	4045 6395 4045 6310
+Wire Wire Line
+	4045 6310 4145 6310
+Connection ~ 4145 6310
+Wire Wire Line
+	4145 6310 4145 6395
+Wire Wire Line
+	3380 6110 3730 6110
+Connection ~ 4145 6110
+Connection ~ 3730 6110
+Wire Wire Line
+	3730 6110 4145 6110
+Wire Wire Line
+	3730 6310 3380 6310
+Wire Wire Line
+	4880 6945 4880 7095
+Wire Wire Line
+	4545 6945 4880 6945
+Wire Wire Line
+	4545 7095 4880 7095
+Connection ~ 4880 7095
+Wire Wire Line
+	4880 7095 4880 7195
+Wire Wire Line
+	4545 7195 4880 7195
+Connection ~ 4880 7195
+Wire Wire Line
+	4880 7195 4880 7285
+Wire Wire Line
+	4880 7485 4880 7530
+Wire Wire Line
+	1690 6840 1360 6840
+Text Label 1360 6840 0    39   ~ 0
+FAULT
+Wire Wire Line
+	5630 6730 5125 6730
+Wire Wire Line
+	5125 6730 5125 6735
+Wire Wire Line
+	5630 6930 5490 6930
+Text Label 5490 6930 0    39   ~ 0
+DIR
+Wire Wire Line
+	5980 7380 5925 7380
+Connection ~ 5925 7380
+Wire Wire Line
+	5925 7380 5880 7380
+Wire Wire Line
+	6430 6580 6655 6580
+Wire Wire Line
+	6430 6730 6655 6730
+Text Label 6655 6580 2    39   ~ 0
+MA13
+Text Label 6655 6730 2    39   ~ 0
+MB13
+Wire Wire Line
+	6030 6095 6030 6295
+Wire Wire Line
+	5930 6380 5930 6295
+Wire Wire Line
+	5930 6295 6030 6295
+Connection ~ 6030 6295
+Wire Wire Line
+	6030 6295 6030 6380
+Wire Wire Line
+	5265 6095 5615 6095
+Connection ~ 6030 6095
+Connection ~ 5615 6095
+Wire Wire Line
+	5615 6095 6030 6095
+Wire Wire Line
+	5615 6295 5265 6295
+Wire Wire Line
+	6765 6930 6765 7080
+Wire Wire Line
+	6430 6930 6765 6930
+Wire Wire Line
+	6430 7080 6765 7080
+Connection ~ 6765 7080
+Wire Wire Line
+	6765 7080 6765 7180
+Wire Wire Line
+	6430 7180 6765 7180
+Connection ~ 6765 7180
+Wire Wire Line
+	6765 7180 6765 7270
+Wire Wire Line
+	6765 7470 6765 7515
+Wire Wire Line
+	3745 6845 3415 6845
+Text Label 3415 6845 0    39   ~ 0
+FAULT
+Wire Wire Line
+	5630 6830 5300 6830
+Text Label 5300 6830 0    39   ~ 0
+FAULT
+Wire Wire Line
+	7665 6725 7160 6725
+Wire Wire Line
+	7160 6725 7160 6730
+Wire Wire Line
+	7665 6925 7525 6925
+Text Label 7525 6925 0    39   ~ 0
+DIR
+Wire Wire Line
+	8015 7375 7960 7375
+Connection ~ 7960 7375
+Wire Wire Line
+	7960 7375 7915 7375
+Wire Wire Line
+	8465 6575 8690 6575
+Wire Wire Line
+	8465 6725 8690 6725
+Text Label 8690 6575 2    39   ~ 0
+MA14
+Text Label 8690 6725 2    39   ~ 0
+MB14
+Wire Wire Line
+	8065 6090 8065 6290
+Wire Wire Line
+	7965 6375 7965 6290
+Wire Wire Line
+	7965 6290 8065 6290
+Connection ~ 8065 6290
+Wire Wire Line
+	8065 6290 8065 6375
+Wire Wire Line
+	7300 6090 7650 6090
+Connection ~ 8065 6090
+Connection ~ 7650 6090
+Wire Wire Line
+	7650 6090 8065 6090
+Wire Wire Line
+	7650 6290 7300 6290
+Wire Wire Line
+	8800 6925 8800 7075
+Wire Wire Line
+	8465 6925 8800 6925
+Wire Wire Line
+	8465 7075 8800 7075
+Connection ~ 8800 7075
+Wire Wire Line
+	8800 7075 8800 7175
+Wire Wire Line
+	8465 7175 8800 7175
+Connection ~ 8800 7175
+Wire Wire Line
+	8800 7175 8800 7265
+Wire Wire Line
+	8800 7465 8800 7510
+Wire Wire Line
+	9720 6730 9215 6730
+Wire Wire Line
+	9215 6730 9215 6735
+Wire Wire Line
+	9720 6930 9580 6930
+Text Label 9580 6930 0    39   ~ 0
+DIR
+Wire Wire Line
+	10070 7380 10015 7380
+Connection ~ 10015 7380
+Wire Wire Line
+	10015 7380 9970 7380
+Wire Wire Line
+	10520 6580 10745 6580
+Wire Wire Line
+	10520 6730 10745 6730
+Text Label 10745 6580 2    39   ~ 0
+MA15
+Text Label 10745 6730 2    39   ~ 0
+MB15
+Wire Wire Line
+	10120 6095 10120 6295
+Wire Wire Line
+	10020 6380 10020 6295
+Wire Wire Line
+	10020 6295 10120 6295
+Connection ~ 10120 6295
+Wire Wire Line
+	10120 6295 10120 6380
+Wire Wire Line
+	9355 6095 9705 6095
+Connection ~ 10120 6095
+Connection ~ 9705 6095
+Wire Wire Line
+	9705 6095 10120 6095
+Wire Wire Line
+	9705 6295 9355 6295
+Wire Wire Line
+	10855 6930 10855 7080
+Wire Wire Line
+	10520 6930 10855 6930
+Wire Wire Line
+	10520 7080 10855 7080
+Connection ~ 10855 7080
+Wire Wire Line
+	10855 7080 10855 7180
+Wire Wire Line
+	10520 7180 10855 7180
+Connection ~ 10855 7180
+Wire Wire Line
+	10855 7180 10855 7270
+Wire Wire Line
+	10855 7470 10855 7515
+Wire Wire Line
+	7665 6825 7335 6825
+Text Label 7335 6825 0    39   ~ 0
+FAULT
+Wire Wire Line
+	9720 6830 9390 6830
+Text Label 9390 6830 0    39   ~ 0
+FAULT
+Wire Wire Line
+	1735 9270 1230 9270
+Wire Wire Line
+	1230 9270 1230 9275
+Wire Wire Line
+	1735 9470 1595 9470
+Text Label 1595 9470 0    39   ~ 0
+DIR
+Wire Wire Line
+	2085 9920 2030 9920
+Connection ~ 2030 9920
+Wire Wire Line
+	2030 9920 1985 9920
+Wire Wire Line
+	2535 9120 2760 9120
+Wire Wire Line
+	2535 9270 2760 9270
+Text Label 2760 9120 2    39   ~ 0
+MA16
+Text Label 2760 9270 2    39   ~ 0
+MB16
+Wire Wire Line
+	2135 8635 2135 8835
+Wire Wire Line
+	2035 8920 2035 8835
+Wire Wire Line
+	2035 8835 2135 8835
+Connection ~ 2135 8835
+Wire Wire Line
+	2135 8835 2135 8920
+Wire Wire Line
+	1370 8635 1720 8635
+Connection ~ 2135 8635
+Connection ~ 1720 8635
+Wire Wire Line
+	1720 8635 2135 8635
+Wire Wire Line
+	1720 8835 1370 8835
+Wire Wire Line
+	2870 9470 2870 9620
+Wire Wire Line
+	2535 9470 2870 9470
+Wire Wire Line
+	2535 9620 2870 9620
+Connection ~ 2870 9620
+Wire Wire Line
+	2870 9620 2870 9720
+Wire Wire Line
+	2535 9720 2870 9720
+Connection ~ 2870 9720
+Wire Wire Line
+	2870 9720 2870 9810
+Wire Wire Line
+	2870 10010 2870 10055
+Wire Wire Line
+	1735 9370 1405 9370
+Text Label 1405 9370 0    39   ~ 0
+FAULT
+Wire Wire Line
+	3770 9265 3265 9265
+Wire Wire Line
+	3265 9265 3265 9270
+Wire Wire Line
+	3770 9465 3630 9465
+Text Label 3630 9465 0    39   ~ 0
+DIR
+Wire Wire Line
+	4120 9915 4065 9915
+Connection ~ 4065 9915
+Wire Wire Line
+	4065 9915 4020 9915
+Wire Wire Line
+	4570 9115 4795 9115
+Wire Wire Line
+	4570 9265 4795 9265
+Text Label 4795 9115 2    39   ~ 0
+MA17
+Text Label 4795 9265 2    39   ~ 0
+MB17
+Wire Wire Line
+	4170 8630 4170 8830
+Wire Wire Line
+	4070 8915 4070 8830
+Wire Wire Line
+	4070 8830 4170 8830
+Connection ~ 4170 8830
+Wire Wire Line
+	4170 8830 4170 8915
+Wire Wire Line
+	3405 8630 3755 8630
+Connection ~ 4170 8630
+Connection ~ 3755 8630
+Wire Wire Line
+	3755 8630 4170 8630
+Wire Wire Line
+	3755 8830 3405 8830
+Wire Wire Line
+	4905 9465 4905 9615
+Wire Wire Line
+	4570 9465 4905 9465
+Wire Wire Line
+	4570 9615 4905 9615
+Connection ~ 4905 9615
+Wire Wire Line
+	4905 9615 4905 9715
+Wire Wire Line
+	4570 9715 4905 9715
+Connection ~ 4905 9715
+Wire Wire Line
+	4905 9715 4905 9805
+Wire Wire Line
+	4905 10005 4905 10050
+Wire Wire Line
+	5825 9270 5320 9270
+Wire Wire Line
+	5320 9270 5320 9275
+Wire Wire Line
+	5825 9470 5685 9470
+Text Label 5685 9470 0    39   ~ 0
+DIR
+Wire Wire Line
+	6175 9920 6120 9920
+Connection ~ 6120 9920
+Wire Wire Line
+	6120 9920 6075 9920
+Wire Wire Line
+	6625 9120 6850 9120
+Wire Wire Line
+	6625 9270 6850 9270
+Text Label 6850 9120 2    39   ~ 0
+MA18
+Text Label 6850 9270 2    39   ~ 0
+MB18
+Wire Wire Line
+	6225 8635 6225 8835
+Wire Wire Line
+	6125 8920 6125 8835
+Wire Wire Line
+	6125 8835 6225 8835
+Connection ~ 6225 8835
+Wire Wire Line
+	6225 8835 6225 8920
+Wire Wire Line
+	5460 8635 5810 8635
+Connection ~ 6225 8635
+Connection ~ 5810 8635
+Wire Wire Line
+	5810 8635 6225 8635
+Wire Wire Line
+	5810 8835 5460 8835
+Wire Wire Line
+	6960 9470 6960 9620
+Wire Wire Line
+	6625 9470 6960 9470
+Wire Wire Line
+	6625 9620 6960 9620
+Connection ~ 6960 9620
+Wire Wire Line
+	6960 9620 6960 9720
+Wire Wire Line
+	6625 9720 6960 9720
+Connection ~ 6960 9720
+Wire Wire Line
+	6960 9720 6960 9810
+Wire Wire Line
+	6960 10010 6960 10055
+Wire Wire Line
+	3770 9365 3440 9365
+Text Label 3440 9365 0    39   ~ 0
+FAULT
+Wire Wire Line
+	5825 9370 5495 9370
+Text Label 5495 9370 0    39   ~ 0
+FAULT
+Text HLabel 8710 8645 0    39   Input ~ 0
+MA[1..18]
+Entry Wire Line
+	8780 8680 8880 8780
+Entry Wire Line
+	8780 8740 8880 8840
+Wire Wire Line
+	8880 8780 8965 8780
+Wire Wire Line
+	8880 8840 8965 8840
+Text Label 8965 8780 0    39   ~ 0
+MA1
+Text Label 8965 8840 0    39   ~ 0
+MA2
+Entry Wire Line
+	8780 8805 8880 8905
+Entry Wire Line
+	8780 8865 8880 8965
+Wire Wire Line
+	8880 8905 8965 8905
+Wire Wire Line
+	8880 8965 8965 8965
+Text Label 8965 8905 0    39   ~ 0
+MA3
+Text Label 8965 8965 0    39   ~ 0
+MA4
+Entry Wire Line
+	8780 8930 8880 9030
+Entry Wire Line
+	8780 8990 8880 9090
+Wire Wire Line
+	8880 9030 8965 9030
+Wire Wire Line
+	8880 9090 8965 9090
+Text Label 8965 9030 0    39   ~ 0
+MA5
+Text Label 8965 9090 0    39   ~ 0
+MA6
+Entry Wire Line
+	8780 9055 8880 9155
+Entry Wire Line
+	8780 9115 8880 9215
+Wire Wire Line
+	8880 9155 8965 9155
+Wire Wire Line
+	8880 9215 8965 9215
+Text Label 8965 9155 0    39   ~ 0
+MA7
+Text Label 8965 9215 0    39   ~ 0
+MA8
+Entry Wire Line
+	8780 9180 8880 9280
+Entry Wire Line
+	8780 9240 8880 9340
+Wire Wire Line
+	8880 9280 8965 9280
+Wire Wire Line
+	8880 9340 8965 9340
+Text Label 8965 9280 0    39   ~ 0
+MA9
+Text Label 8965 9340 0    39   ~ 0
+MA10
+Entry Wire Line
+	8780 9305 8880 9405
+Entry Wire Line
+	8780 9365 8880 9465
+Wire Wire Line
+	8880 9405 8965 9405
+Wire Wire Line
+	8880 9465 8965 9465
+Text Label 8965 9405 0    39   ~ 0
+MA11
+Text Label 8965 9465 0    39   ~ 0
+MA12
+Entry Wire Line
+	8780 9425 8880 9525
+Entry Wire Line
+	8780 9485 8880 9585
+Wire Wire Line
+	8880 9525 8965 9525
+Wire Wire Line
+	8880 9585 8965 9585
+Text Label 8965 9525 0    39   ~ 0
+MA13
+Text Label 8965 9585 0    39   ~ 0
+MA14
+Entry Wire Line
+	8780 9550 8880 9650
+Entry Wire Line
+	8780 9610 8880 9710
+Wire Wire Line
+	8880 9650 8965 9650
+Wire Wire Line
+	8880 9710 8965 9710
+Text Label 8965 9650 0    39   ~ 0
+MA15
+Text Label 8965 9710 0    39   ~ 0
+MA16
+Entry Wire Line
+	8780 9680 8880 9780
+Entry Wire Line
+	8780 9740 8880 9840
+Wire Wire Line
+	8880 9780 8965 9780
+Wire Wire Line
+	8880 9840 8965 9840
+Text Label 8965 9780 0    39   ~ 0
+MA17
+Text Label 8965 9840 0    39   ~ 0
+MA18
+Wire Bus Line
+	8780 8645 8710 8645
+Text HLabel 9245 8640 0    39   Input ~ 0
+MB[1..18]
+Entry Wire Line
+	9315 8675 9415 8775
+Entry Wire Line
+	9315 8735 9415 8835
+Wire Wire Line
+	9415 8775 9500 8775
+Wire Wire Line
+	9415 8835 9500 8835
+Text Label 9500 8775 0    39   ~ 0
+MB1
+Text Label 9500 8835 0    39   ~ 0
+MB2
+Entry Wire Line
+	9315 8800 9415 8900
+Entry Wire Line
+	9315 8860 9415 8960
+Wire Wire Line
+	9415 8900 9500 8900
+Wire Wire Line
+	9415 8960 9500 8960
+Text Label 9500 8900 0    39   ~ 0
+MB3
+Text Label 9500 8960 0    39   ~ 0
+MB4
+Entry Wire Line
+	9315 8925 9415 9025
+Entry Wire Line
+	9315 8985 9415 9085
+Wire Wire Line
+	9415 9025 9500 9025
+Wire Wire Line
+	9415 9085 9500 9085
+Text Label 9500 9025 0    39   ~ 0
+MB5
+Text Label 9500 9085 0    39   ~ 0
+MB6
+Entry Wire Line
+	9315 9050 9415 9150
+Entry Wire Line
+	9315 9110 9415 9210
+Wire Wire Line
+	9415 9150 9500 9150
+Wire Wire Line
+	9415 9210 9500 9210
+Text Label 9500 9150 0    39   ~ 0
+MB7
+Text Label 9500 9210 0    39   ~ 0
+MB8
+Entry Wire Line
+	9315 9175 9415 9275
+Entry Wire Line
+	9315 9235 9415 9335
+Wire Wire Line
+	9415 9275 9500 9275
+Wire Wire Line
+	9415 9335 9500 9335
+Text Label 9500 9275 0    39   ~ 0
+MB9
+Text Label 9500 9335 0    39   ~ 0
+MB10
+Entry Wire Line
+	9315 9300 9415 9400
+Entry Wire Line
+	9315 9360 9415 9460
+Wire Wire Line
+	9415 9400 9500 9400
+Wire Wire Line
+	9415 9460 9500 9460
+Text Label 9500 9400 0    39   ~ 0
+MB11
+Text Label 9500 9460 0    39   ~ 0
+MB12
+Entry Wire Line
+	9315 9420 9415 9520
+Entry Wire Line
+	9315 9480 9415 9580
+Wire Wire Line
+	9415 9520 9500 9520
+Wire Wire Line
+	9415 9580 9500 9580
+Text Label 9500 9520 0    39   ~ 0
+MB13
+Text Label 9500 9580 0    39   ~ 0
+MB14
+Entry Wire Line
+	9315 9545 9415 9645
+Entry Wire Line
+	9315 9605 9415 9705
+Wire Wire Line
+	9415 9645 9500 9645
+Wire Wire Line
+	9415 9705 9500 9705
+Text Label 9500 9645 0    39   ~ 0
+MB15
+Text Label 9500 9705 0    39   ~ 0
+MB16
+Entry Wire Line
+	9315 9675 9415 9775
+Entry Wire Line
+	9315 9735 9415 9835
+Wire Wire Line
+	9415 9775 9500 9775
+Wire Wire Line
+	9415 9835 9500 9835
+Text Label 9500 9775 0    39   ~ 0
+MB17
+Text Label 9500 9835 0    39   ~ 0
+MB18
+Wire Bus Line
+	9315 8640 9245 8640
+Text HLabel 9960 8655 0    39   Input ~ 0
+PWM
+Text HLabel 9960 8725 0    39   Input ~ 0
+DIR
+Text HLabel 9960 8800 0    39   Input ~ 0
+FAULT
+Text Label 10125 8655 2    39   ~ 0
+PWM
+Text Label 10130 8725 2    39   ~ 0
+DIR
+Text Label 10130 8800 2    39   ~ 0
+FAULT
+Wire Wire Line
+	9960 8800 10130 8800
+Wire Wire Line
+	9960 8725 10130 8725
+Wire Wire Line
+	9960 8655 10125 8655
+Text Label 1105 1730 0    39   ~ 0
+M1
+Text Label 3160 1735 0    39   ~ 0
+M2
+Text Label 5045 1720 0    39   ~ 0
+M3
+Text Label 7085 1715 0    39   ~ 0
+M4
+Text Label 9145 1720 0    39   ~ 0
+M5
+Text Label 1175 4010 0    39   ~ 0
+M6
+Text Label 3210 4020 0    39   ~ 0
+M7
+Text Label 5105 4000 0    39   ~ 0
+M8
+Text Label 7145 3995 0    39   ~ 0
+M9
+Text Label 9190 4000 0    39   ~ 0
+M10
+Text Label 1200 6740 0    39   ~ 0
+M11
+Text Label 3255 6745 0    39   ~ 0
+M12
+Text Label 5140 6730 0    39   ~ 0
+M13
+Text Label 7170 6725 0    39   ~ 0
+M14
+Text Label 9225 6730 0    39   ~ 0
+M15
+Text Label 1250 9270 0    39   ~ 0
+M16
+Text Label 3280 9265 0    39   ~ 0
+M17
+Text Label 5340 9270 0    39   ~ 0
+M18
+Text HLabel 8220 8650 0    39   Input ~ 0
+M[1..18]
+Entry Wire Line
+	8290 8685 8390 8785
+Entry Wire Line
+	8290 8745 8390 8845
+Wire Wire Line
+	8390 8785 8475 8785
+Wire Wire Line
+	8390 8845 8475 8845
+Text Label 8475 8785 0    39   ~ 0
+M1
+Text Label 8475 8845 0    39   ~ 0
+M2
+Entry Wire Line
+	8290 8810 8390 8910
+Entry Wire Line
+	8290 8870 8390 8970
+Wire Wire Line
+	8390 8910 8475 8910
+Wire Wire Line
+	8390 8970 8475 8970
+Text Label 8475 8910 0    39   ~ 0
+M3
+Text Label 8475 8970 0    39   ~ 0
+M4
+Entry Wire Line
+	8290 8935 8390 9035
+Entry Wire Line
+	8290 8995 8390 9095
+Wire Wire Line
+	8390 9035 8475 9035
+Wire Wire Line
+	8390 9095 8475 9095
+Text Label 8475 9035 0    39   ~ 0
+M5
+Text Label 8475 9095 0    39   ~ 0
+M6
+Entry Wire Line
+	8290 9060 8390 9160
+Entry Wire Line
+	8290 9120 8390 9220
+Wire Wire Line
+	8390 9160 8475 9160
+Wire Wire Line
+	8390 9220 8475 9220
+Text Label 8475 9160 0    39   ~ 0
+M7
+Text Label 8475 9220 0    39   ~ 0
+M8
+Entry Wire Line
+	8290 9185 8390 9285
+Entry Wire Line
+	8290 9245 8390 9345
+Wire Wire Line
+	8390 9285 8475 9285
+Wire Wire Line
+	8390 9345 8475 9345
+Text Label 8475 9285 0    39   ~ 0
+M9
+Text Label 8475 9345 0    39   ~ 0
+M10
+Entry Wire Line
+	8290 9310 8390 9410
+Entry Wire Line
+	8290 9370 8390 9470
+Wire Wire Line
+	8390 9410 8475 9410
+Wire Wire Line
+	8390 9470 8475 9470
+Text Label 8475 9410 0    39   ~ 0
+M11
+Text Label 8475 9470 0    39   ~ 0
+M12
+Entry Wire Line
+	8290 9430 8390 9530
+Entry Wire Line
+	8290 9490 8390 9590
+Wire Wire Line
+	8390 9530 8475 9530
+Wire Wire Line
+	8390 9590 8475 9590
+Text Label 8475 9530 0    39   ~ 0
+M13
+Text Label 8475 9590 0    39   ~ 0
+M14
+Entry Wire Line
+	8290 9555 8390 9655
+Entry Wire Line
+	8290 9615 8390 9715
+Wire Wire Line
+	8390 9655 8475 9655
+Wire Wire Line
+	8390 9715 8475 9715
+Text Label 8475 9655 0    39   ~ 0
+M15
+Text Label 8475 9715 0    39   ~ 0
+M16
+Entry Wire Line
+	8290 9685 8390 9785
+Entry Wire Line
+	8290 9745 8390 9845
+Wire Wire Line
+	8390 9785 8475 9785
+Wire Wire Line
+	8390 9845 8475 9845
+Text Label 8475 9785 0    39   ~ 0
+M17
+Text Label 8475 9845 0    39   ~ 0
+M18
+Wire Bus Line
+	8290 8650 8220 8650
+Wire Wire Line
+	3295 1300 3645 1300
+Connection ~ 3295 1300
+Wire Wire Line
+	5180 1285 5530 1285
+Connection ~ 5180 1285
+Connection ~ 7215 1280
+Connection ~ 9270 1285
+Wire Wire Line
+	9270 1285 9620 1285
+Connection ~ 1295 3575
+Connection ~ 3350 3580
+Wire Wire Line
+	5235 3565 5585 3565
+Connection ~ 5235 3565
+Connection ~ 7270 3560
+Wire Wire Line
+	9325 3565 9675 3565
+Connection ~ 9325 3565
+Connection ~ 1325 6305
+Connection ~ 3380 6310
+Connection ~ 5265 6295
+Connection ~ 7300 6290
+Connection ~ 9355 6295
+Connection ~ 1370 8835
+Connection ~ 3405 8830
+Connection ~ 5460 8835
+Connection ~ 1240 1295
+Wire Wire Line
+	1240 1295 1590 1295
+Connection ~ 1590 1095
+Wire Wire Line
+	1590 1095 2005 1095
+Wire Wire Line
+	1240 1095 1590 1095
+Text Label 1465 2030 0    39   ~ 0
+PWM
+Wire Wire Line
+	1605 2030 1465 2030
+Text Label 3520 2035 0    39   ~ 0
+PWM
+Wire Wire Line
+	3660 2035 3520 2035
+Text Label 5405 2020 0    39   ~ 0
+PWM
+Wire Wire Line
+	5545 2020 5405 2020
+Text Label 7440 2015 0    39   ~ 0
+PWM
+Wire Wire Line
+	7580 2015 7440 2015
+Text Label 9495 2020 0    39   ~ 0
+PWM
+Wire Wire Line
+	9635 2020 9495 2020
+Text Label 1520 4310 0    39   ~ 0
+PWM
+Wire Wire Line
+	1660 4310 1520 4310
+Text Label 3575 4315 0    39   ~ 0
+PWM
+Wire Wire Line
+	3715 4315 3575 4315
+Text Label 5460 4300 0    39   ~ 0
+PWM
+Wire Wire Line
+	5600 4300 5460 4300
+Text Label 7495 4295 0    39   ~ 0
+PWM
+Wire Wire Line
+	7635 4295 7495 4295
+Text Label 9550 4300 0    39   ~ 0
+PWM
+Wire Wire Line
+	9690 4300 9550 4300
+Text Label 1550 7040 0    39   ~ 0
+PWM
+Wire Wire Line
+	1690 7040 1550 7040
+Text Label 3605 7045 0    39   ~ 0
+PWM
+Wire Wire Line
+	3745 7045 3605 7045
+Text Label 5490 7030 0    39   ~ 0
+PWM
+Wire Wire Line
+	5630 7030 5490 7030
+Text Label 7525 7025 0    39   ~ 0
+PWM
+Wire Wire Line
+	7665 7025 7525 7025
+Text Label 9580 7030 0    39   ~ 0
+PWM
+Wire Wire Line
+	9720 7030 9580 7030
+Text Label 1595 9570 0    39   ~ 0
+PWM
+Wire Wire Line
+	1735 9570 1595 9570
+Text Label 3630 9565 0    39   ~ 0
+PWM
+Wire Wire Line
+	3770 9565 3630 9565
+Text Label 5685 9570 0    39   ~ 0
+PWM
+Wire Wire Line
+	5825 9570 5685 9570
+$Comp
+L Device:C_Small C5
+U 1 1 628392D1
+P 1590 1195
+F 0 "C5" H 1682 1241 50  0000 L CNN
+F 1 "0.1uF" H 1682 1150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1590 1195 50  0001 C CNN
+F 3 "~" H 1590 1195 50  0001 C CNN
+	1    1590 1195
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0235
+U 1 1 63ABCC0D
+P 5460 8835
+F 0 "#PWR0235" H 5460 8585 50  0001 C CNN
+F 1 "GND" H 5465 8662 50  0000 C CNN
+F 2 "" H 5460 8835 50  0001 C CNN
+F 3 "" H 5460 8835 50  0001 C CNN
+	1    5460 8835
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0234
+U 1 1 63A301F6
+P 3405 8830
+F 0 "#PWR0234" H 3405 8580 50  0001 C CNN
+F 1 "GND" H 3410 8657 50  0000 C CNN
+F 2 "" H 3405 8830 50  0001 C CNN
+F 3 "" H 3405 8830 50  0001 C CNN
+	1    3405 8830
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0233
+U 1 1 6395D82D
+P 1370 8835
+F 0 "#PWR0233" H 1370 8585 50  0001 C CNN
+F 1 "GND" H 1375 8662 50  0000 C CNN
+F 2 "" H 1370 8835 50  0001 C CNN
+F 3 "" H 1370 8835 50  0001 C CNN
+	1    1370 8835
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0232
+U 1 1 638D0E72
+P 9355 6295
+F 0 "#PWR0232" H 9355 6045 50  0001 C CNN
+F 1 "GND" H 9360 6122 50  0000 C CNN
+F 2 "" H 9355 6295 50  0001 C CNN
+F 3 "" H 9355 6295 50  0001 C CNN
+	1    9355 6295
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0231
+U 1 1 63844776
+P 7300 6290
+F 0 "#PWR0231" H 7300 6040 50  0001 C CNN
+F 1 "GND" H 7305 6117 50  0000 C CNN
+F 2 "" H 7300 6290 50  0001 C CNN
+F 3 "" H 7300 6290 50  0001 C CNN
+	1    7300 6290
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0230
+U 1 1 637B7EA4
+P 5265 6295
+F 0 "#PWR0230" H 5265 6045 50  0001 C CNN
+F 1 "GND" H 5270 6122 50  0000 C CNN
+F 2 "" H 5265 6295 50  0001 C CNN
+F 3 "" H 5265 6295 50  0001 C CNN
+	1    5265 6295
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0229
+U 1 1 6372B1B1
+P 3380 6310
+F 0 "#PWR0229" H 3380 6060 50  0001 C CNN
+F 1 "GND" H 3385 6137 50  0000 C CNN
+F 2 "" H 3380 6310 50  0001 C CNN
+F 3 "" H 3380 6310 50  0001 C CNN
+	1    3380 6310
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0228
+U 1 1 6369E890
+P 1325 6305
+F 0 "#PWR0228" H 1325 6055 50  0001 C CNN
+F 1 "GND" H 1330 6132 50  0000 C CNN
+F 2 "" H 1325 6305 50  0001 C CNN
+F 3 "" H 1325 6305 50  0001 C CNN
+	1    1325 6305
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0227
+U 1 1 6353BF58
+P 9325 3565
+F 0 "#PWR0227" H 9325 3315 50  0001 C CNN
+F 1 "GND" H 9330 3392 50  0000 C CNN
+F 2 "" H 9325 3565 50  0001 C CNN
+F 3 "" H 9325 3565 50  0001 C CNN
+	1    9325 3565
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0226
+U 1 1 63467E4D
+P 7270 3560
+F 0 "#PWR0226" H 7270 3310 50  0001 C CNN
+F 1 "GND" H 7275 3387 50  0000 C CNN
+F 2 "" H 7270 3560 50  0001 C CNN
+F 3 "" H 7270 3560 50  0001 C CNN
+	1    7270 3560
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0225
+U 1 1 63306EE1
+P 5235 3565
+F 0 "#PWR0225" H 5235 3315 50  0001 C CNN
+F 1 "GND" H 5240 3392 50  0000 C CNN
+F 2 "" H 5235 3565 50  0001 C CNN
+F 3 "" H 5235 3565 50  0001 C CNN
+	1    5235 3565
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0224
+U 1 1 632C036F
+P 3350 3580
+F 0 "#PWR0224" H 3350 3330 50  0001 C CNN
+F 1 "GND" H 3355 3407 50  0000 C CNN
+F 2 "" H 3350 3580 50  0001 C CNN
+F 3 "" H 3350 3580 50  0001 C CNN
+	1    3350 3580
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0223
+U 1 1 632339D0
+P 1295 3575
+F 0 "#PWR0223" H 1295 3325 50  0001 C CNN
+F 1 "GND" H 1300 3402 50  0000 C CNN
+F 2 "" H 1295 3575 50  0001 C CNN
+F 3 "" H 1295 3575 50  0001 C CNN
+	1    1295 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0222
+U 1 1 631A64C6
+P 9270 1285
+F 0 "#PWR0222" H 9270 1035 50  0001 C CNN
+F 1 "GND" H 9275 1112 50  0000 C CNN
+F 2 "" H 9270 1285 50  0001 C CNN
+F 3 "" H 9270 1285 50  0001 C CNN
+	1    9270 1285
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0221
+U 1 1 63119784
+P 7215 1280
+F 0 "#PWR0221" H 7215 1030 50  0001 C CNN
+F 1 "GND" H 7220 1107 50  0000 C CNN
+F 2 "" H 7215 1280 50  0001 C CNN
+F 3 "" H 7215 1280 50  0001 C CNN
+	1    7215 1280
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0220
+U 1 1 62E9BEC6
+P 5180 1285
+F 0 "#PWR0220" H 5180 1035 50  0001 C CNN
+F 1 "GND" H 5185 1112 50  0000 C CNN
+F 2 "" H 5180 1285 50  0001 C CNN
+F 3 "" H 5180 1285 50  0001 C CNN
+	1    5180 1285
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0219
+U 1 1 62D7FD17
+P 3295 1300
+F 0 "#PWR0219" H 3295 1050 50  0001 C CNN
+F 1 "GND" H 3300 1127 50  0000 C CNN
+F 2 "" H 3295 1300 50  0001 C CNN
+F 3 "" H 3295 1300 50  0001 C CNN
+	1    3295 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0218
+U 1 1 62D7DAB5
+P 1240 1295
+F 0 "#PWR0218" H 1240 1045 50  0001 C CNN
+F 1 "GND" H 1245 1122 50  0000 C CNN
+F 2 "" H 1240 1295 50  0001 C CNN
+F 3 "" H 1240 1295 50  0001 C CNN
+	1    1240 1295
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0217
+U 1 1 63B2EF2B
+P 6960 10055
+F 0 "#PWR0217" H 6960 9805 50  0001 C CNN
+F 1 "GND" H 6965 9882 50  0000 C CNN
+F 2 "" H 6960 10055 50  0001 C CNN
+F 3 "" H 6960 10055 50  0001 C CNN
+	1    6960 10055
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R56
+U 1 1 63B2EF1E
+P 6960 9910
+F 0 "R56" H 7015 9910 50  0000 L CNN
+F 1 "500m" V 6955 9845 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6960 9910 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 6960 9910 50  0001 C CNN
+	1    6960 9910
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 63B2EF10
+P 5460 8735
+F 0 "C20" H 5552 8781 50  0000 L CNN
+F 1 "10uF" H 5552 8690 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5460 8735 50  0001 C CNN
+F 3 "~" H 5460 8735 50  0001 C CNN
+	1    5460 8735
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C24
+U 1 1 63B2EF0A
+P 5810 8735
+F 0 "C24" H 5902 8781 50  0000 L CNN
+F 1 "0.1uF" H 5902 8690 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5810 8735 50  0001 C CNN
+F 3 "~" H 5810 8735 50  0001 C CNN
+	1    5810 8735
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0216
+U 1 1 63B2EEFF
+P 6225 8635
+F 0 "#PWR0216" H 6225 8485 50  0001 C CNN
+F 1 "+12V" H 6240 8808 50  0000 C CNN
+F 2 "" H 6225 8635 50  0001 C CNN
+F 3 "" H 6225 8635 50  0001 C CNN
+	1    6225 8635
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0215
+U 1 1 63B2EEF2
+P 6120 9920
+F 0 "#PWR0215" H 6120 9670 50  0001 C CNN
+F 1 "GND" H 6125 9747 50  0000 C CNN
+F 2 "" H 6120 9920 50  0001 C CNN
+F 3 "" H 6120 9920 50  0001 C CNN
+	1    6120 9920
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0213
+U 1 1 63B2EEE0
+P 5320 9475
+F 0 "#PWR0213" H 5320 9225 50  0001 C CNN
+F 1 "GND" H 5325 9302 50  0000 C CNN
+F 2 "" H 5320 9475 50  0001 C CNN
+F 3 "" H 5320 9475 50  0001 C CNN
+	1    5320 9475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R51
+U 1 1 63B2EED4
+P 5320 9375
+F 0 "R51" H 5379 9421 50  0000 L CNN
+F 1 "100k" V 5320 9300 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5320 9375 50  0001 C CNN
+F 3 "~" H 5320 9375 50  0001 C CNN
+	1    5320 9375
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U12
+U 1 1 63B2EECE
+P 6225 9420
+F 0 "U12" H 6520 9990 50  0000 C CNN
+F 1 "MAX14870" H 6510 9910 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 6225 8570 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 6225 9420 50  0001 C CNN
+	1    6225 9420
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0212
+U 1 1 63B2EEC6
+P 4905 10050
+F 0 "#PWR0212" H 4905 9800 50  0001 C CNN
+F 1 "GND" H 4910 9877 50  0000 C CNN
+F 2 "" H 4905 10050 50  0001 C CNN
+F 3 "" H 4905 10050 50  0001 C CNN
+	1    4905 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R44
+U 1 1 63B2EEB9
+P 4905 9905
+F 0 "R44" H 4960 9905 50  0000 L CNN
+F 1 "500m" V 4900 9840 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4905 9905 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 4905 9905 50  0001 C CNN
+	1    4905 9905
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 63B2EEAB
+P 3405 8730
+F 0 "C12" H 3497 8776 50  0000 L CNN
+F 1 "10uF" H 3497 8685 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3405 8730 50  0001 C CNN
+F 3 "~" H 3405 8730 50  0001 C CNN
+	1    3405 8730
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 63B2EEA5
+P 3755 8730
+F 0 "C16" H 3847 8776 50  0000 L CNN
+F 1 "0.1uF" H 3847 8685 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3755 8730 50  0001 C CNN
+F 3 "~" H 3755 8730 50  0001 C CNN
+	1    3755 8730
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0211
+U 1 1 63B2EE9A
+P 4170 8630
+F 0 "#PWR0211" H 4170 8480 50  0001 C CNN
+F 1 "+12V" H 4185 8803 50  0000 C CNN
+F 2 "" H 4170 8630 50  0001 C CNN
+F 3 "" H 4170 8630 50  0001 C CNN
+	1    4170 8630
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0210
+U 1 1 63B2EE8D
+P 4065 9915
+F 0 "#PWR0210" H 4065 9665 50  0001 C CNN
+F 1 "GND" H 4070 9742 50  0000 C CNN
+F 2 "" H 4065 9915 50  0001 C CNN
+F 3 "" H 4065 9915 50  0001 C CNN
+	1    4065 9915
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0208
+U 1 1 63B2EE7B
+P 3265 9470
+F 0 "#PWR0208" H 3265 9220 50  0001 C CNN
+F 1 "GND" H 3270 9297 50  0000 C CNN
+F 2 "" H 3265 9470 50  0001 C CNN
+F 3 "" H 3265 9470 50  0001 C CNN
+	1    3265 9470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R36
+U 1 1 63B2EE6F
+P 3265 9370
+F 0 "R36" H 3324 9416 50  0000 L CNN
+F 1 "100k" V 3265 9295 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3265 9370 50  0001 C CNN
+F 3 "~" H 3265 9370 50  0001 C CNN
+	1    3265 9370
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U8
+U 1 1 63B2EE69
+P 4170 9415
+F 0 "U8" H 4465 9985 50  0000 C CNN
+F 1 "MAX14870" H 4455 9905 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 4170 8565 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 4170 9415 50  0001 C CNN
+	1    4170 9415
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0207
+U 1 1 63B2EE5F
+P 2870 10055
+F 0 "#PWR0207" H 2870 9805 50  0001 C CNN
+F 1 "GND" H 2875 9882 50  0000 C CNN
+F 2 "" H 2870 10055 50  0001 C CNN
+F 3 "" H 2870 10055 50  0001 C CNN
+	1    2870 10055
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R32
+U 1 1 63B2EE52
+P 2870 9910
+F 0 "R32" H 2925 9910 50  0000 L CNN
+F 1 "500m" V 2865 9845 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2870 9910 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 2870 9910 50  0001 C CNN
+	1    2870 9910
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 63B2EE44
+P 1370 8735
+F 0 "C4" H 1462 8781 50  0000 L CNN
+F 1 "10uF" H 1462 8690 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1370 8735 50  0001 C CNN
+F 3 "~" H 1370 8735 50  0001 C CNN
+	1    1370 8735
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 63B2EE3E
+P 1720 8735
+F 0 "C8" H 1812 8781 50  0000 L CNN
+F 1 "0.1uF" H 1812 8690 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1720 8735 50  0001 C CNN
+F 3 "~" H 1720 8735 50  0001 C CNN
+	1    1720 8735
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0206
+U 1 1 63B2EE33
+P 2135 8635
+F 0 "#PWR0206" H 2135 8485 50  0001 C CNN
+F 1 "+12V" H 2150 8808 50  0000 C CNN
+F 2 "" H 2135 8635 50  0001 C CNN
+F 3 "" H 2135 8635 50  0001 C CNN
+	1    2135 8635
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0205
+U 1 1 63B2EE26
+P 2030 9920
+F 0 "#PWR0205" H 2030 9670 50  0001 C CNN
+F 1 "GND" H 2035 9747 50  0000 C CNN
+F 2 "" H 2030 9920 50  0001 C CNN
+F 3 "" H 2030 9920 50  0001 C CNN
+	1    2030 9920
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0203
+U 1 1 63B2EE14
+P 1230 9475
+F 0 "#PWR0203" H 1230 9225 50  0001 C CNN
+F 1 "GND" H 1235 9302 50  0000 C CNN
+F 2 "" H 1230 9475 50  0001 C CNN
+F 3 "" H 1230 9475 50  0001 C CNN
+	1    1230 9475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R25
+U 1 1 63B2EE08
+P 1230 9375
+F 0 "R25" H 1289 9421 50  0000 L CNN
+F 1 "100k" V 1230 9300 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1230 9375 50  0001 C CNN
+F 3 "~" H 1230 9375 50  0001 C CNN
+	1    1230 9375
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U4
+U 1 1 63B2EE02
+P 2135 9420
+F 0 "U4" H 2430 9990 50  0000 C CNN
+F 1 "MAX14870" H 2420 9910 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 2135 8570 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 2135 9420 50  0001 C CNN
+	1    2135 9420
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0202
+U 1 1 63AFCDD2
+P 10855 7515
+F 0 "#PWR0202" H 10855 7265 50  0001 C CNN
+F 1 "GND" H 10860 7342 50  0000 C CNN
+F 2 "" H 10855 7515 50  0001 C CNN
+F 3 "" H 10855 7515 50  0001 C CNN
+	1    10855 7515
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R74
+U 1 1 63AFCDC5
+P 10855 7370
+F 0 "R74" H 10910 7370 50  0000 L CNN
+F 1 "500m" V 10850 7305 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10855 7370 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 10855 7370 50  0001 C CNN
+	1    10855 7370
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C33
+U 1 1 63AFCDB7
+P 9355 6195
+F 0 "C33" H 9447 6241 50  0000 L CNN
+F 1 "10uF" H 9447 6150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9355 6195 50  0001 C CNN
+F 3 "~" H 9355 6195 50  0001 C CNN
+	1    9355 6195
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C36
+U 1 1 63AFCDB1
+P 9705 6195
+F 0 "C36" H 9797 6241 50  0000 L CNN
+F 1 "0.1uF" H 9797 6150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9705 6195 50  0001 C CNN
+F 3 "~" H 9705 6195 50  0001 C CNN
+	1    9705 6195
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0201
+U 1 1 63AFCDA6
+P 10120 6095
+F 0 "#PWR0201" H 10120 5945 50  0001 C CNN
+F 1 "+12V" H 10135 6268 50  0000 C CNN
+F 2 "" H 10120 6095 50  0001 C CNN
+F 3 "" H 10120 6095 50  0001 C CNN
+	1    10120 6095
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0200
+U 1 1 63AFCD99
+P 10015 7380
+F 0 "#PWR0200" H 10015 7130 50  0001 C CNN
+F 1 "GND" H 10020 7207 50  0000 C CNN
+F 2 "" H 10015 7380 50  0001 C CNN
+F 3 "" H 10015 7380 50  0001 C CNN
+	1    10015 7380
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0198
+U 1 1 63AFCD87
+P 9215 6935
+F 0 "#PWR0198" H 9215 6685 50  0001 C CNN
+F 1 "GND" H 9220 6762 50  0000 C CNN
+F 2 "" H 9215 6935 50  0001 C CNN
+F 3 "" H 9215 6935 50  0001 C CNN
+	1    9215 6935
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R68
+U 1 1 63AFCD7B
+P 9215 6835
+F 0 "R68" H 9274 6881 50  0000 L CNN
+F 1 "100k" V 9215 6760 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9215 6835 50  0001 C CNN
+F 3 "~" H 9215 6835 50  0001 C CNN
+	1    9215 6835
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U18
+U 1 1 63AFCD75
+P 10120 6880
+F 0 "U18" H 10415 7450 50  0000 C CNN
+F 1 "MAX14870" H 10405 7370 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 10120 6030 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 10120 6880 50  0001 C CNN
+	1    10120 6880
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0197
+U 1 1 63AFCD6D
+P 8800 7510
+F 0 "#PWR0197" H 8800 7260 50  0001 C CNN
+F 1 "GND" H 8805 7337 50  0000 C CNN
+F 2 "" H 8800 7510 50  0001 C CNN
+F 3 "" H 8800 7510 50  0001 C CNN
+	1    8800 7510
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R65
+U 1 1 63AFCD60
+P 8800 7365
+F 0 "R65" H 8855 7365 50  0000 L CNN
+F 1 "500m" V 8795 7300 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8800 7365 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 8800 7365 50  0001 C CNN
+	1    8800 7365
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C27
+U 1 1 63AFCD52
+P 7300 6190
+F 0 "C27" H 7392 6236 50  0000 L CNN
+F 1 "10uF" H 7392 6145 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7300 6190 50  0001 C CNN
+F 3 "~" H 7300 6190 50  0001 C CNN
+	1    7300 6190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C30
+U 1 1 63AFCD4C
+P 7650 6190
+F 0 "C30" H 7742 6236 50  0000 L CNN
+F 1 "0.1uF" H 7742 6145 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7650 6190 50  0001 C CNN
+F 3 "~" H 7650 6190 50  0001 C CNN
+	1    7650 6190
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0196
+U 1 1 63AFCD41
+P 8065 6090
+F 0 "#PWR0196" H 8065 5940 50  0001 C CNN
+F 1 "+12V" H 8080 6263 50  0000 C CNN
+F 2 "" H 8065 6090 50  0001 C CNN
+F 3 "" H 8065 6090 50  0001 C CNN
+	1    8065 6090
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0195
+U 1 1 63AFCD34
+P 7960 7375
+F 0 "#PWR0195" H 7960 7125 50  0001 C CNN
+F 1 "GND" H 7965 7202 50  0000 C CNN
+F 2 "" H 7960 7375 50  0001 C CNN
+F 3 "" H 7960 7375 50  0001 C CNN
+	1    7960 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0193
+U 1 1 63AFCD22
+P 7160 6930
+F 0 "#PWR0193" H 7160 6680 50  0001 C CNN
+F 1 "GND" H 7165 6757 50  0000 C CNN
+F 2 "" H 7160 6930 50  0001 C CNN
+F 3 "" H 7160 6930 50  0001 C CNN
+	1    7160 6930
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R59
+U 1 1 63AFCD16
+P 7160 6830
+F 0 "R59" H 7219 6876 50  0000 L CNN
+F 1 "100k" V 7160 6755 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7160 6830 50  0001 C CNN
+F 3 "~" H 7160 6830 50  0001 C CNN
+	1    7160 6830
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U15
+U 1 1 63AFCD10
+P 8065 6875
+F 0 "U15" H 8360 7445 50  0000 C CNN
+F 1 "MAX14870" H 8350 7365 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 8065 6025 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 8065 6875 50  0001 C CNN
+	1    8065 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0192
+U 1 1 63AFCD04
+P 6765 7515
+F 0 "#PWR0192" H 6765 7265 50  0001 C CNN
+F 1 "GND" H 6770 7342 50  0000 C CNN
+F 2 "" H 6765 7515 50  0001 C CNN
+F 3 "" H 6765 7515 50  0001 C CNN
+	1    6765 7515
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R55
+U 1 1 63AFCCF7
+P 6765 7370
+F 0 "R55" H 6820 7370 50  0000 L CNN
+F 1 "500m" V 6760 7305 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6765 7370 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 6765 7370 50  0001 C CNN
+	1    6765 7370
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C19
+U 1 1 63AFCCE9
+P 5265 6195
+F 0 "C19" H 5357 6241 50  0000 L CNN
+F 1 "10uF" H 5357 6150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5265 6195 50  0001 C CNN
+F 3 "~" H 5265 6195 50  0001 C CNN
+	1    5265 6195
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C23
+U 1 1 63AFCCE3
+P 5615 6195
+F 0 "C23" H 5707 6241 50  0000 L CNN
+F 1 "0.1uF" H 5707 6150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5615 6195 50  0001 C CNN
+F 3 "~" H 5615 6195 50  0001 C CNN
+	1    5615 6195
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0191
+U 1 1 63AFCCD8
+P 6030 6095
+F 0 "#PWR0191" H 6030 5945 50  0001 C CNN
+F 1 "+12V" H 6045 6268 50  0000 C CNN
+F 2 "" H 6030 6095 50  0001 C CNN
+F 3 "" H 6030 6095 50  0001 C CNN
+	1    6030 6095
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0190
+U 1 1 63AFCCCB
+P 5925 7380
+F 0 "#PWR0190" H 5925 7130 50  0001 C CNN
+F 1 "GND" H 5930 7207 50  0000 C CNN
+F 2 "" H 5925 7380 50  0001 C CNN
+F 3 "" H 5925 7380 50  0001 C CNN
+	1    5925 7380
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0188
+U 1 1 63AFCCB9
+P 5125 6935
+F 0 "#PWR0188" H 5125 6685 50  0001 C CNN
+F 1 "GND" H 5130 6762 50  0000 C CNN
+F 2 "" H 5125 6935 50  0001 C CNN
+F 3 "" H 5125 6935 50  0001 C CNN
+	1    5125 6935
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R47
+U 1 1 63AFCCAD
+P 5125 6835
+F 0 "R47" H 5184 6881 50  0000 L CNN
+F 1 "100k" V 5125 6760 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5125 6835 50  0001 C CNN
+F 3 "~" H 5125 6835 50  0001 C CNN
+	1    5125 6835
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U11
+U 1 1 63AFCCA7
+P 6030 6880
+F 0 "U11" H 6325 7450 50  0000 C CNN
+F 1 "MAX14870" H 6315 7370 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 6030 6030 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 6030 6880 50  0001 C CNN
+	1    6030 6880
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0187
+U 1 1 63AFCC9D
+P 4880 7530
+F 0 "#PWR0187" H 4880 7280 50  0001 C CNN
+F 1 "GND" H 4885 7357 50  0000 C CNN
+F 2 "" H 4880 7530 50  0001 C CNN
+F 3 "" H 4880 7530 50  0001 C CNN
+	1    4880 7530
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R43
+U 1 1 63AFCC90
+P 4880 7385
+F 0 "R43" H 4935 7385 50  0000 L CNN
+F 1 "500m" V 4875 7320 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4880 7385 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 4880 7385 50  0001 C CNN
+	1    4880 7385
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 63AFCC82
+P 3380 6210
+F 0 "C11" H 3472 6256 50  0000 L CNN
+F 1 "10uF" H 3472 6165 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3380 6210 50  0001 C CNN
+F 3 "~" H 3380 6210 50  0001 C CNN
+	1    3380 6210
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 63AFCC7C
+P 3730 6210
+F 0 "C15" H 3822 6256 50  0000 L CNN
+F 1 "0.1uF" H 3822 6165 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3730 6210 50  0001 C CNN
+F 3 "~" H 3730 6210 50  0001 C CNN
+	1    3730 6210
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0186
+U 1 1 63AFCC71
+P 4145 6110
+F 0 "#PWR0186" H 4145 5960 50  0001 C CNN
+F 1 "+12V" H 4160 6283 50  0000 C CNN
+F 2 "" H 4145 6110 50  0001 C CNN
+F 3 "" H 4145 6110 50  0001 C CNN
+	1    4145 6110
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0185
+U 1 1 63AFCC64
+P 4040 7395
+F 0 "#PWR0185" H 4040 7145 50  0001 C CNN
+F 1 "GND" H 4045 7222 50  0000 C CNN
+F 2 "" H 4040 7395 50  0001 C CNN
+F 3 "" H 4040 7395 50  0001 C CNN
+	1    4040 7395
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0183
+U 1 1 63AFCC52
+P 3240 6950
+F 0 "#PWR0183" H 3240 6700 50  0001 C CNN
+F 1 "GND" H 3245 6777 50  0000 C CNN
+F 2 "" H 3240 6950 50  0001 C CNN
+F 3 "" H 3240 6950 50  0001 C CNN
+	1    3240 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R35
+U 1 1 63AFCC46
+P 3240 6850
+F 0 "R35" H 3299 6896 50  0000 L CNN
+F 1 "100k" V 3240 6775 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3240 6850 50  0001 C CNN
+F 3 "~" H 3240 6850 50  0001 C CNN
+	1    3240 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U7
+U 1 1 63AFCC40
+P 4145 6895
+F 0 "U7" H 4440 7465 50  0000 C CNN
+F 1 "MAX14870" H 4430 7385 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 4145 6045 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 4145 6895 50  0001 C CNN
+	1    4145 6895
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0182
+U 1 1 63AFCC38
+P 2825 7525
+F 0 "#PWR0182" H 2825 7275 50  0001 C CNN
+F 1 "GND" H 2830 7352 50  0000 C CNN
+F 2 "" H 2825 7525 50  0001 C CNN
+F 3 "" H 2825 7525 50  0001 C CNN
+	1    2825 7525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R31
+U 1 1 63AFCC2B
+P 2825 7380
+F 0 "R31" H 2880 7380 50  0000 L CNN
+F 1 "500m" V 2820 7315 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2825 7380 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 2825 7380 50  0001 C CNN
+	1    2825 7380
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 63AFCC1D
+P 1325 6205
+F 0 "C3" H 1417 6251 50  0000 L CNN
+F 1 "10uF" H 1417 6160 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1325 6205 50  0001 C CNN
+F 3 "~" H 1325 6205 50  0001 C CNN
+	1    1325 6205
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 63AFCC17
+P 1675 6205
+F 0 "C7" H 1767 6251 50  0000 L CNN
+F 1 "0.1uF" H 1767 6160 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1675 6205 50  0001 C CNN
+F 3 "~" H 1675 6205 50  0001 C CNN
+	1    1675 6205
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0181
+U 1 1 63AFCC0C
+P 2090 6105
+F 0 "#PWR0181" H 2090 5955 50  0001 C CNN
+F 1 "+12V" H 2105 6278 50  0000 C CNN
+F 2 "" H 2090 6105 50  0001 C CNN
+F 3 "" H 2090 6105 50  0001 C CNN
+	1    2090 6105
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0180
+U 1 1 63AFCBFF
+P 1985 7390
+F 0 "#PWR0180" H 1985 7140 50  0001 C CNN
+F 1 "GND" H 1990 7217 50  0000 C CNN
+F 2 "" H 1985 7390 50  0001 C CNN
+F 3 "" H 1985 7390 50  0001 C CNN
+	1    1985 7390
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0178
+U 1 1 63AFCBED
+P 1185 6945
+F 0 "#PWR0178" H 1185 6695 50  0001 C CNN
+F 1 "GND" H 1190 6772 50  0000 C CNN
+F 2 "" H 1185 6945 50  0001 C CNN
+F 3 "" H 1185 6945 50  0001 C CNN
+	1    1185 6945
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R23
+U 1 1 63AFCBE1
+P 1185 6845
+F 0 "R23" H 1244 6891 50  0000 L CNN
+F 1 "100k" V 1185 6770 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1185 6845 50  0001 C CNN
+F 3 "~" H 1185 6845 50  0001 C CNN
+	1    1185 6845
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U3
+U 1 1 63AFCBDB
+P 2090 6890
+F 0 "U3" H 2385 7460 50  0000 C CNN
+F 1 "MAX14870" H 2375 7380 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 2090 6040 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 2090 6890 50  0001 C CNN
+	1    2090 6890
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0177
+U 1 1 63AE0CB8
+P 10825 4785
+F 0 "#PWR0177" H 10825 4535 50  0001 C CNN
+F 1 "GND" H 10830 4612 50  0000 C CNN
+F 2 "" H 10825 4785 50  0001 C CNN
+F 3 "" H 10825 4785 50  0001 C CNN
+	1    10825 4785
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R73
+U 1 1 63AE0CAB
+P 10825 4640
+F 0 "R73" H 10880 4640 50  0000 L CNN
+F 1 "500m" V 10820 4575 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10825 4640 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 10825 4640 50  0001 C CNN
+	1    10825 4640
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C32
+U 1 1 63AE0C9D
+P 9325 3465
+F 0 "C32" H 9417 3511 50  0000 L CNN
+F 1 "10uF" H 9417 3420 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9325 3465 50  0001 C CNN
+F 3 "~" H 9325 3465 50  0001 C CNN
+	1    9325 3465
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C35
+U 1 1 63AE0C97
+P 9675 3465
+F 0 "C35" H 9767 3511 50  0000 L CNN
+F 1 "0.1uF" H 9767 3420 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9675 3465 50  0001 C CNN
+F 3 "~" H 9675 3465 50  0001 C CNN
+	1    9675 3465
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0176
+U 1 1 63AE0C8C
+P 10090 3365
+F 0 "#PWR0176" H 10090 3215 50  0001 C CNN
+F 1 "+12V" H 10105 3538 50  0000 C CNN
+F 2 "" H 10090 3365 50  0001 C CNN
+F 3 "" H 10090 3365 50  0001 C CNN
+	1    10090 3365
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0175
+U 1 1 63AE0C7F
+P 9985 4650
+F 0 "#PWR0175" H 9985 4400 50  0001 C CNN
+F 1 "GND" H 9990 4477 50  0000 C CNN
+F 2 "" H 9985 4650 50  0001 C CNN
+F 3 "" H 9985 4650 50  0001 C CNN
+	1    9985 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0173
+U 1 1 63AE0C6D
+P 9185 4205
+F 0 "#PWR0173" H 9185 3955 50  0001 C CNN
+F 1 "GND" H 9190 4032 50  0000 C CNN
+F 2 "" H 9185 4205 50  0001 C CNN
+F 3 "" H 9185 4205 50  0001 C CNN
+	1    9185 4205
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R67
+U 1 1 63AE0C61
+P 9185 4105
+F 0 "R67" H 9244 4151 50  0000 L CNN
+F 1 "100k" V 9185 4030 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9185 4105 50  0001 C CNN
+F 3 "~" H 9185 4105 50  0001 C CNN
+	1    9185 4105
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U17
+U 1 1 63AE0C5B
+P 10090 4150
+F 0 "U17" H 10385 4720 50  0000 C CNN
+F 1 "MAX14870" H 10375 4640 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 10090 3300 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 10090 4150 50  0001 C CNN
+	1    10090 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0172
+U 1 1 63AE0C53
+P 8770 4780
+F 0 "#PWR0172" H 8770 4530 50  0001 C CNN
+F 1 "GND" H 8775 4607 50  0000 C CNN
+F 2 "" H 8770 4780 50  0001 C CNN
+F 3 "" H 8770 4780 50  0001 C CNN
+	1    8770 4780
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R64
+U 1 1 63AE0C46
+P 8770 4635
+F 0 "R64" H 8825 4635 50  0000 L CNN
+F 1 "500m" V 8765 4570 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8770 4635 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 8770 4635 50  0001 C CNN
+	1    8770 4635
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C26
+U 1 1 63AE0C38
+P 7270 3460
+F 0 "C26" H 7362 3506 50  0000 L CNN
+F 1 "10uF" H 7362 3415 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7270 3460 50  0001 C CNN
+F 3 "~" H 7270 3460 50  0001 C CNN
+	1    7270 3460
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C29
+U 1 1 63AE0C32
+P 7620 3460
+F 0 "C29" H 7712 3506 50  0000 L CNN
+F 1 "0.1uF" H 7712 3415 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7620 3460 50  0001 C CNN
+F 3 "~" H 7620 3460 50  0001 C CNN
+	1    7620 3460
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0171
+U 1 1 63AE0C27
+P 8035 3360
+F 0 "#PWR0171" H 8035 3210 50  0001 C CNN
+F 1 "+12V" H 8050 3533 50  0000 C CNN
+F 2 "" H 8035 3360 50  0001 C CNN
+F 3 "" H 8035 3360 50  0001 C CNN
+	1    8035 3360
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0170
+U 1 1 63AE0C1A
+P 7930 4645
+F 0 "#PWR0170" H 7930 4395 50  0001 C CNN
+F 1 "GND" H 7935 4472 50  0000 C CNN
+F 2 "" H 7930 4645 50  0001 C CNN
+F 3 "" H 7930 4645 50  0001 C CNN
+	1    7930 4645
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0168
+U 1 1 63AE0C08
+P 7130 4200
+F 0 "#PWR0168" H 7130 3950 50  0001 C CNN
+F 1 "GND" H 7135 4027 50  0000 C CNN
+F 2 "" H 7130 4200 50  0001 C CNN
+F 3 "" H 7130 4200 50  0001 C CNN
+	1    7130 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R58
+U 1 1 63AE0BFC
+P 7130 4100
+F 0 "R58" H 7189 4146 50  0000 L CNN
+F 1 "100k" V 7130 4025 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7130 4100 50  0001 C CNN
+F 3 "~" H 7130 4100 50  0001 C CNN
+	1    7130 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U14
+U 1 1 63AE0BF6
+P 8035 4145
+F 0 "U14" H 8330 4715 50  0000 C CNN
+F 1 "MAX14870" H 8320 4635 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 8035 3295 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 8035 4145 50  0001 C CNN
+	1    8035 4145
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0167
+U 1 1 63AE0BEA
+P 6735 4785
+F 0 "#PWR0167" H 6735 4535 50  0001 C CNN
+F 1 "GND" H 6740 4612 50  0000 C CNN
+F 2 "" H 6735 4785 50  0001 C CNN
+F 3 "" H 6735 4785 50  0001 C CNN
+	1    6735 4785
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R54
+U 1 1 63AE0BDD
+P 6735 4640
+F 0 "R54" H 6790 4640 50  0000 L CNN
+F 1 "500m" V 6730 4575 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6735 4640 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 6735 4640 50  0001 C CNN
+	1    6735 4640
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C18
+U 1 1 63AE0BCF
+P 5235 3465
+F 0 "C18" H 5327 3511 50  0000 L CNN
+F 1 "10uF" H 5327 3420 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5235 3465 50  0001 C CNN
+F 3 "~" H 5235 3465 50  0001 C CNN
+	1    5235 3465
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C22
+U 1 1 63AE0BC9
+P 5585 3465
+F 0 "C22" H 5677 3511 50  0000 L CNN
+F 1 "0.1uF" H 5677 3420 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5585 3465 50  0001 C CNN
+F 3 "~" H 5585 3465 50  0001 C CNN
+	1    5585 3465
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0166
+U 1 1 63AE0BBE
+P 6000 3365
+F 0 "#PWR0166" H 6000 3215 50  0001 C CNN
+F 1 "+12V" H 6015 3538 50  0000 C CNN
+F 2 "" H 6000 3365 50  0001 C CNN
+F 3 "" H 6000 3365 50  0001 C CNN
+	1    6000 3365
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0165
+U 1 1 63AE0BB1
+P 5895 4650
+F 0 "#PWR0165" H 5895 4400 50  0001 C CNN
+F 1 "GND" H 5900 4477 50  0000 C CNN
+F 2 "" H 5895 4650 50  0001 C CNN
+F 3 "" H 5895 4650 50  0001 C CNN
+	1    5895 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0163
+U 1 1 63AE0B9F
+P 5095 4205
+F 0 "#PWR0163" H 5095 3955 50  0001 C CNN
+F 1 "GND" H 5100 4032 50  0000 C CNN
+F 2 "" H 5095 4205 50  0001 C CNN
+F 3 "" H 5095 4205 50  0001 C CNN
+	1    5095 4205
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R46
+U 1 1 63AE0B93
+P 5095 4105
+F 0 "R46" H 5154 4151 50  0000 L CNN
+F 1 "100k" V 5095 4030 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5095 4105 50  0001 C CNN
+F 3 "~" H 5095 4105 50  0001 C CNN
+	1    5095 4105
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U10
+U 1 1 63AE0B8D
+P 6000 4150
+F 0 "U10" H 6295 4720 50  0000 C CNN
+F 1 "MAX14870" H 6285 4640 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 6000 3300 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 6000 4150 50  0001 C CNN
+	1    6000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0162
+U 1 1 63AE0B83
+P 4850 4800
+F 0 "#PWR0162" H 4850 4550 50  0001 C CNN
+F 1 "GND" H 4855 4627 50  0000 C CNN
+F 2 "" H 4850 4800 50  0001 C CNN
+F 3 "" H 4850 4800 50  0001 C CNN
+	1    4850 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R42
+U 1 1 63AE0B76
+P 4850 4655
+F 0 "R42" H 4905 4655 50  0000 L CNN
+F 1 "500m" V 4845 4590 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4850 4655 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 4850 4655 50  0001 C CNN
+	1    4850 4655
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 63AE0B68
+P 3350 3480
+F 0 "C10" H 3442 3526 50  0000 L CNN
+F 1 "10uF" H 3442 3435 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 3480 50  0001 C CNN
+F 3 "~" H 3350 3480 50  0001 C CNN
+	1    3350 3480
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 63AE0B62
+P 3700 3480
+F 0 "C14" H 3792 3526 50  0000 L CNN
+F 1 "0.1uF" H 3792 3435 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3700 3480 50  0001 C CNN
+F 3 "~" H 3700 3480 50  0001 C CNN
+	1    3700 3480
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0161
+U 1 1 63AE0B57
+P 4115 3380
+F 0 "#PWR0161" H 4115 3230 50  0001 C CNN
+F 1 "+12V" H 4130 3553 50  0000 C CNN
+F 2 "" H 4115 3380 50  0001 C CNN
+F 3 "" H 4115 3380 50  0001 C CNN
+	1    4115 3380
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0160
+U 1 1 63AE0B4A
+P 4010 4665
+F 0 "#PWR0160" H 4010 4415 50  0001 C CNN
+F 1 "GND" H 4015 4492 50  0000 C CNN
+F 2 "" H 4010 4665 50  0001 C CNN
+F 3 "" H 4010 4665 50  0001 C CNN
+	1    4010 4665
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0158
+U 1 1 63AE0B38
+P 3210 4220
+F 0 "#PWR0158" H 3210 3970 50  0001 C CNN
+F 1 "GND" H 3215 4047 50  0000 C CNN
+F 2 "" H 3210 4220 50  0001 C CNN
+F 3 "" H 3210 4220 50  0001 C CNN
+	1    3210 4220
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R34
+U 1 1 63AE0B2C
+P 3210 4120
+F 0 "R34" H 3269 4166 50  0000 L CNN
+F 1 "100k" V 3210 4045 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3210 4120 50  0001 C CNN
+F 3 "~" H 3210 4120 50  0001 C CNN
+	1    3210 4120
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U6
+U 1 1 63AE0B26
+P 4115 4165
+F 0 "U6" H 4410 4735 50  0000 C CNN
+F 1 "MAX14870" H 4400 4655 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 4115 3315 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 4115 4165 50  0001 C CNN
+	1    4115 4165
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 63AE0B1E
+P 2795 4795
+F 0 "#PWR0157" H 2795 4545 50  0001 C CNN
+F 1 "GND" H 2800 4622 50  0000 C CNN
+F 2 "" H 2795 4795 50  0001 C CNN
+F 3 "" H 2795 4795 50  0001 C CNN
+	1    2795 4795
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R30
+U 1 1 63AE0B11
+P 2795 4650
+F 0 "R30" H 2850 4650 50  0000 L CNN
+F 1 "500m" V 2790 4585 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2795 4650 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 2795 4650 50  0001 C CNN
+	1    2795 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 63AE0B03
+P 1295 3475
+F 0 "C2" H 1387 3521 50  0000 L CNN
+F 1 "10uF" H 1387 3430 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1295 3475 50  0001 C CNN
+F 3 "~" H 1295 3475 50  0001 C CNN
+	1    1295 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 63AE0AFD
+P 1645 3475
+F 0 "C6" H 1737 3521 50  0000 L CNN
+F 1 "0.1uF" H 1737 3430 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1645 3475 50  0001 C CNN
+F 3 "~" H 1645 3475 50  0001 C CNN
+	1    1645 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0156
+U 1 1 63AE0AF2
+P 2060 3375
+F 0 "#PWR0156" H 2060 3225 50  0001 C CNN
+F 1 "+12V" H 2075 3548 50  0000 C CNN
+F 2 "" H 2060 3375 50  0001 C CNN
+F 3 "" H 2060 3375 50  0001 C CNN
+	1    2060 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0155
+U 1 1 63AE0AE5
+P 1955 4660
+F 0 "#PWR0155" H 1955 4410 50  0001 C CNN
+F 1 "GND" H 1960 4487 50  0000 C CNN
+F 2 "" H 1955 4660 50  0001 C CNN
+F 3 "" H 1955 4660 50  0001 C CNN
+	1    1955 4660
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 63AE0AD3
+P 1155 4215
+F 0 "#PWR0153" H 1155 3965 50  0001 C CNN
+F 1 "GND" H 1160 4042 50  0000 C CNN
+F 2 "" H 1155 4215 50  0001 C CNN
+F 3 "" H 1155 4215 50  0001 C CNN
+	1    1155 4215
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R22
+U 1 1 63AE0AC7
+P 1155 4115
+F 0 "R22" H 1214 4161 50  0000 L CNN
+F 1 "100k" V 1155 4040 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1155 4115 50  0001 C CNN
+F 3 "~" H 1155 4115 50  0001 C CNN
+	1    1155 4115
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U2
+U 1 1 63AE0AC1
+P 2060 4160
+F 0 "U2" H 2355 4730 50  0000 C CNN
+F 1 "MAX14870" H 2345 4650 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 2060 3310 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 2060 4160 50  0001 C CNN
+	1    2060 4160
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0152
+U 1 1 63A95AB1
+P 10770 2505
+F 0 "#PWR0152" H 10770 2255 50  0001 C CNN
+F 1 "GND" H 10775 2332 50  0000 C CNN
+F 2 "" H 10770 2505 50  0001 C CNN
+F 3 "" H 10770 2505 50  0001 C CNN
+	1    10770 2505
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R72
+U 1 1 63A95AA4
+P 10770 2360
+F 0 "R72" H 10825 2360 50  0000 L CNN
+F 1 "500m" V 10765 2295 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10770 2360 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 10770 2360 50  0001 C CNN
+	1    10770 2360
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C31
+U 1 1 63A95A96
+P 9270 1185
+F 0 "C31" H 9362 1231 50  0000 L CNN
+F 1 "10uF" H 9362 1140 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9270 1185 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A106MA8NRNC/3887527" H 9270 1185 50  0001 C CNN
+	1    9270 1185
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C34
+U 1 1 63A95A90
+P 9620 1185
+F 0 "C34" H 9712 1231 50  0000 L CNN
+F 1 "0.1uF" H 9712 1140 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9620 1185 50  0001 C CNN
+F 3 "~" H 9620 1185 50  0001 C CNN
+	1    9620 1185
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0151
+U 1 1 63A95A85
+P 10035 1085
+F 0 "#PWR0151" H 10035 935 50  0001 C CNN
+F 1 "+12V" H 10050 1258 50  0000 C CNN
+F 2 "" H 10035 1085 50  0001 C CNN
+F 3 "" H 10035 1085 50  0001 C CNN
+	1    10035 1085
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 63A95A78
+P 9930 2370
+F 0 "#PWR0150" H 9930 2120 50  0001 C CNN
+F 1 "GND" H 9935 2197 50  0000 C CNN
+F 2 "" H 9930 2370 50  0001 C CNN
+F 3 "" H 9930 2370 50  0001 C CNN
+	1    9930 2370
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0148
+U 1 1 63A95A66
+P 9130 1925
+F 0 "#PWR0148" H 9130 1675 50  0001 C CNN
+F 1 "GND" H 9135 1752 50  0000 C CNN
+F 2 "" H 9130 1925 50  0001 C CNN
+F 3 "" H 9130 1925 50  0001 C CNN
+	1    9130 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R66
+U 1 1 63A95A5A
+P 9130 1825
+F 0 "R66" H 9189 1871 50  0000 L CNN
+F 1 "100k" V 9130 1750 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9130 1825 50  0001 C CNN
+F 3 "~" H 9130 1825 50  0001 C CNN
+	1    9130 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U16
+U 1 1 63A95A54
+P 10035 1870
+F 0 "U16" H 10330 2440 50  0000 C CNN
+F 1 "MAX14870" H 10320 2360 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 10035 1020 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 10035 1870 50  0001 C CNN
+	1    10035 1870
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0147
+U 1 1 63A95A4C
+P 8715 2500
+F 0 "#PWR0147" H 8715 2250 50  0001 C CNN
+F 1 "GND" H 8720 2327 50  0000 C CNN
+F 2 "" H 8715 2500 50  0001 C CNN
+F 3 "" H 8715 2500 50  0001 C CNN
+	1    8715 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R63
+U 1 1 63A95A3F
+P 8715 2355
+F 0 "R63" H 8770 2355 50  0000 L CNN
+F 1 "500m" V 8710 2290 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8715 2355 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 8715 2355 50  0001 C CNN
+	1    8715 2355
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C25
+U 1 1 63A95A31
+P 7215 1180
+F 0 "C25" H 7307 1226 50  0000 L CNN
+F 1 "10uF" H 7307 1135 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7215 1180 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A106MA8NRNC/3887527" H 7215 1180 50  0001 C CNN
+	1    7215 1180
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C28
+U 1 1 63A95A2B
+P 7565 1180
+F 0 "C28" H 7657 1226 50  0000 L CNN
+F 1 "0.1uF" H 7657 1135 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7565 1180 50  0001 C CNN
+F 3 "~" H 7565 1180 50  0001 C CNN
+	1    7565 1180
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0146
+U 1 1 63A95A20
+P 7980 1080
+F 0 "#PWR0146" H 7980 930 50  0001 C CNN
+F 1 "+12V" H 7995 1253 50  0000 C CNN
+F 2 "" H 7980 1080 50  0001 C CNN
+F 3 "" H 7980 1080 50  0001 C CNN
+	1    7980 1080
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0145
+U 1 1 63A95A13
+P 7875 2365
+F 0 "#PWR0145" H 7875 2115 50  0001 C CNN
+F 1 "GND" H 7880 2192 50  0000 C CNN
+F 2 "" H 7875 2365 50  0001 C CNN
+F 3 "" H 7875 2365 50  0001 C CNN
+	1    7875 2365
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0143
+U 1 1 63A95A01
+P 7075 1920
+F 0 "#PWR0143" H 7075 1670 50  0001 C CNN
+F 1 "GND" H 7080 1747 50  0000 C CNN
+F 2 "" H 7075 1920 50  0001 C CNN
+F 3 "" H 7075 1920 50  0001 C CNN
+	1    7075 1920
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R57
+U 1 1 63A959F5
+P 7075 1820
+F 0 "R57" H 7134 1866 50  0000 L CNN
+F 1 "100k" V 7075 1745 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7075 1820 50  0001 C CNN
+F 3 "~" H 7075 1820 50  0001 C CNN
+	1    7075 1820
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U13
+U 1 1 63A959EF
+P 7980 1865
+F 0 "U13" H 8275 2435 50  0000 C CNN
+F 1 "MAX14870" H 8265 2355 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 7980 1015 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 7980 1865 50  0001 C CNN
+	1    7980 1865
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 63A60A91
+P 6680 2505
+F 0 "#PWR0142" H 6680 2255 50  0001 C CNN
+F 1 "GND" H 6685 2332 50  0000 C CNN
+F 2 "" H 6680 2505 50  0001 C CNN
+F 3 "" H 6680 2505 50  0001 C CNN
+	1    6680 2505
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R53
+U 1 1 63A60A84
+P 6680 2360
+F 0 "R53" H 6735 2360 50  0000 L CNN
+F 1 "500m" V 6675 2295 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6680 2360 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 6680 2360 50  0001 C CNN
+	1    6680 2360
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 63A60A76
+P 5180 1185
+F 0 "C17" H 5272 1231 50  0000 L CNN
+F 1 "10uF" H 5272 1140 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5180 1185 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A106MA8NRNC/3887527" H 5180 1185 50  0001 C CNN
+	1    5180 1185
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C21
+U 1 1 63A60A70
+P 5530 1185
+F 0 "C21" H 5622 1231 50  0000 L CNN
+F 1 "0.1uF" H 5622 1140 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5530 1185 50  0001 C CNN
+F 3 "~" H 5530 1185 50  0001 C CNN
+	1    5530 1185
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0141
+U 1 1 63A60A65
+P 5945 1085
+F 0 "#PWR0141" H 5945 935 50  0001 C CNN
+F 1 "+12V" H 5960 1258 50  0000 C CNN
+F 2 "" H 5945 1085 50  0001 C CNN
+F 3 "" H 5945 1085 50  0001 C CNN
+	1    5945 1085
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0140
+U 1 1 63A60A58
+P 5840 2370
+F 0 "#PWR0140" H 5840 2120 50  0001 C CNN
+F 1 "GND" H 5845 2197 50  0000 C CNN
+F 2 "" H 5840 2370 50  0001 C CNN
+F 3 "" H 5840 2370 50  0001 C CNN
+	1    5840 2370
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 63A60A46
+P 5040 1925
+F 0 "#PWR0138" H 5040 1675 50  0001 C CNN
+F 1 "GND" H 5045 1752 50  0000 C CNN
+F 2 "" H 5040 1925 50  0001 C CNN
+F 3 "" H 5040 1925 50  0001 C CNN
+	1    5040 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R45
+U 1 1 63A60A3A
+P 5040 1825
+F 0 "R45" H 5099 1871 50  0000 L CNN
+F 1 "100k" V 5040 1750 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5040 1825 50  0001 C CNN
+F 3 "~" H 5040 1825 50  0001 C CNN
+	1    5040 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U9
+U 1 1 63A60A34
+P 5945 1870
+F 0 "U9" H 6240 2440 50  0000 C CNN
+F 1 "MAX14870" H 6230 2360 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 5945 1020 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 5945 1870 50  0001 C CNN
+	1    5945 1870
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0137
+U 1 1 63A57885
+P 4795 2520
+F 0 "#PWR0137" H 4795 2270 50  0001 C CNN
+F 1 "GND" H 4800 2347 50  0000 C CNN
+F 2 "" H 4795 2520 50  0001 C CNN
+F 3 "" H 4795 2520 50  0001 C CNN
+	1    4795 2520
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R41
+U 1 1 63A57878
+P 4795 2375
+F 0 "R41" H 4850 2375 50  0000 L CNN
+F 1 "500m" V 4790 2310 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4795 2375 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 4795 2375 50  0001 C CNN
+	1    4795 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 63A5786A
+P 3295 1200
+F 0 "C9" H 3387 1246 50  0000 L CNN
+F 1 "10uF" H 3387 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3295 1200 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A106MA8NRNC/3887527" H 3295 1200 50  0001 C CNN
+	1    3295 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 63A57864
+P 3645 1200
+F 0 "C13" H 3737 1246 50  0000 L CNN
+F 1 "0.1uF" H 3737 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3645 1200 50  0001 C CNN
+F 3 "~" H 3645 1200 50  0001 C CNN
+	1    3645 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0136
+U 1 1 63A57859
+P 4060 1100
+F 0 "#PWR0136" H 4060 950 50  0001 C CNN
+F 1 "+12V" H 4075 1273 50  0000 C CNN
+F 2 "" H 4060 1100 50  0001 C CNN
+F 3 "" H 4060 1100 50  0001 C CNN
+	1    4060 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 63A5784C
+P 3955 2385
+F 0 "#PWR0135" H 3955 2135 50  0001 C CNN
+F 1 "GND" H 3960 2212 50  0000 C CNN
+F 2 "" H 3955 2385 50  0001 C CNN
+F 3 "" H 3955 2385 50  0001 C CNN
+	1    3955 2385
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 63A5783A
+P 3155 1940
+F 0 "#PWR0133" H 3155 1690 50  0001 C CNN
+F 1 "GND" H 3160 1767 50  0000 C CNN
+F 2 "" H 3155 1940 50  0001 C CNN
+F 3 "" H 3155 1940 50  0001 C CNN
+	1    3155 1940
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R33
+U 1 1 63A5782E
+P 3155 1840
+F 0 "R33" H 3214 1886 50  0000 L CNN
+F 1 "100k" V 3155 1765 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3155 1840 50  0001 C CNN
+F 3 "~" H 3155 1840 50  0001 C CNN
+	1    3155 1840
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U5
+U 1 1 63A57828
+P 4060 1885
+F 0 "U5" H 4355 2455 50  0000 C CNN
+F 1 "MAX14870" H 4345 2375 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 4060 1035 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 4060 1885 50  0001 C CNN
+	1    4060 1885
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 6283CCD5
+P 2740 2515
+F 0 "#PWR0132" H 2740 2265 50  0001 C CNN
+F 1 "GND" H 2745 2342 50  0000 C CNN
+F 2 "" H 2740 2515 50  0001 C CNN
+F 3 "" H 2740 2515 50  0001 C CNN
+	1    2740 2515
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R29
+U 1 1 6283B3AC
+P 2740 2370
+F 0 "R29" H 2795 2370 50  0000 L CNN
+F 1 "500m" V 2735 2305 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2740 2370 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSR0603FKR500/2217461" H 2740 2370 50  0001 C CNN
+	1    2740 2370
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 62839F4C
+P 1240 1195
+F 0 "C1" H 1332 1241 50  0000 L CNN
+F 1 "10uF" H 1332 1150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1240 1195 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A106MA8NRNC/3887527" H 1240 1195 50  0001 C CNN
+	1    1240 1195
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0131
+U 1 1 628384A9
+P 2005 1095
+F 0 "#PWR0131" H 2005 945 50  0001 C CNN
+F 1 "+12V" H 2020 1268 50  0000 C CNN
+F 2 "" H 2005 1095 50  0001 C CNN
+F 3 "" H 2005 1095 50  0001 C CNN
+	1    2005 1095
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 628371E7
+P 1900 2380
+F 0 "#PWR0130" H 1900 2130 50  0001 C CNN
+F 1 "GND" H 1905 2207 50  0000 C CNN
+F 2 "" H 1900 2380 50  0001 C CNN
+F 3 "" H 1900 2380 50  0001 C CNN
+	1    1900 2380
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 628354EA
+P 1100 1935
+F 0 "#PWR0128" H 1100 1685 50  0001 C CNN
+F 1 "GND" H 1105 1762 50  0000 C CNN
+F 2 "" H 1100 1935 50  0001 C CNN
+F 3 "" H 1100 1935 50  0001 C CNN
+	1    1100 1935
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R21
+U 1 1 62833E56
+P 1100 1835
+F 0 "R21" H 1159 1881 50  0000 L CNN
+F 1 "100k" V 1100 1760 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1100 1835 50  0001 C CNN
+F 3 "~" H 1100 1835 50  0001 C CNN
+	1    1100 1835
+	1    0    0    -1  
+$EndComp
+$Comp
+L facs:MAX14870 U1
+U 1 1 6283305B
+P 2005 1880
+F 0 "U1" H 2300 2450 50  0000 C CNN
+F 1 "MAX14870" H 2290 2370 50  0000 C CNN
+F 2 "facs-motors:DFN-12-1EP_3x3mm_P0.5mm_EP1.70x2.50mm" H 2005 1030 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14870-MAX14872.pdf" H 2005 1880 50  0001 C CNN
+	1    2005 1880
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	8290 8650 8290 9750
+Wire Bus Line
+	9315 8640 9315 9740
+Wire Bus Line
+	8780 8645 8780 9745
+$EndSCHEMATC

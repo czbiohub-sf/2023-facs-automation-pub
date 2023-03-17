@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ITR1201SR10AR
+D Miniature Reflective Optical Object Sensor, SMD-4
+K Reflective Optical Sensor Opto reflex coupler
+F http://www.everlight.com/file/ProductFile/ITR1201SR10AR-TR.pdf
+$ENDCMP
+#
+$CMP QRE1113
+D Miniature Reflective Optical Object Sensor, SMD-4
+K Reflective Optical Sensor Opto reflex coupler
+F http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF
+$ENDCMP
+#
+#End Doc Library
