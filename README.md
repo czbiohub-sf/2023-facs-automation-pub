@@ -9,7 +9,7 @@ This source describes Open Hardware, which is licensed under the CERN-OHL-W v2.
 
 Electronics hardware is described in the facs_electronics folder.
 
-CAD designs are provided in Onshape: https://cad.onshape.com/documents/c1a3ab256e8df7a71b82db8c/w/ab65c37920d47d4a2484a277/e/421207c6e308bccf3dd4e5b1?configuration=default&renderMode=0&uiState=640b930bf24bcf207edf60a6
+CAD designs are provided in Onshape [here](https://cad.onshape.com/documents/c1a3ab256e8df7a71b82db8c/w/ab65c37920d47d4a2484a277/e/421207c6e308bccf3dd4e5b1?configuration=default&renderMode=0&uiState=640b930bf24bcf207edf60a6).
 
 Software is licensed under BSD 3-Clause.
 
@@ -18,34 +18,32 @@ Copyright Chan Zuckerberg Biohub 2023.
 ## Contents
 
 ### Classes
-/hardware/
-* __HardwareController__ - Interfaces with hardware peripherals
-* __ZaberController__ - Communicates with the zaber stages and gripper
-* __ArduinoController__ - Communicates with the arduino via serial
+`czfacsautomation/hardware/`
+* __`HardwareController`__ - Interfaces with hardware peripherals
+* __`ZaberController`__ - Communicates with the zaber stages and gripper
+* __`ArduinoController`__ - Communicates with the arduino via serial
 
-/sorting/
-* __Controller__ - Creates wrapper classes for auto click methods used for interfacing with the Sony SH800S GUI
-* __Sort__ - Runs a single sort on the Sony SH800S GUI
-* __Gating__ - Runs the GateVertexTool to get and set gate on the Sony SH800S GUI
-* __CreateGate__ - Creates a custom gate using the cell population data
+`czfacsautomation/sorting/`
+* __`Controller`__ - Creates wrapper classes for auto click methods used for interfacing with the Sony SH800S GUI
+* __`Sort`__ - Runs a single sort on the Sony SH800S GUI
+* __`Gating`__ - Runs the GateVertexTool to get and set gate on the Sony SH800S GUI
+* __`CreateGate`__ - Creates a custom gate using the cell population data
 
-/integration/
-* __FACSAutomation__ - Main class to call, starts process, and implements pause/stop
+`czfacsautomation/integration/`
+* __`FACSAutomation`__ - Main class to call, starts process, and implements pause/stop
 
-/slack/
-* __SlackFacs__ - Communicates with Slack App to notify users of current run status.
+`czfacsautomation/slack/`
+* __`SlackFacs`__ - Communicates with Slack App to notify users of current run status.
 
 ### Config Files
-/config/
-* __hardware_config.json__ - Holds the hardware configuration parameters for the zaber stages and arduino
-* __gui_config.json__ - Holds the config file of all screenshots and parameters needed to run sorting
-* __Slack_config.json__ - Holds the configuration parameters for the various messages to post
+* __`config/hardware_config.json`__ - Holds the hardware configuration parameters for the zaber stages and arduino
+* __`config/gui_config.json`__ - Holds the config file of all screenshots and parameters needed to run sorting
+* __`config/Slack_config.json`__ - Holds the configuration parameters for the various messages to post
 
 ### Vendor Folder
-The GateVertexTool `GateVertexTool.exe` is available from Sony Biotechnology.
-Requests to access the GateVertexTool may be made to SONY Biotechnology via the following 
-URL: https://go.sonybiotechnology.com/gate-vertex.html.
-Store the file in the `vendor/GateVertexTool` folder.
+The GateVertexTool `vendor/GateVertexTool.exe` is available from Sony Biotechnology.
+Requests to access the GateVertexTool may be made to SONY Biotechnology [here](https://go.sonybiotechnology.com/gate-vertex.html).
+Store the file in the `vendor/GateVertexTool/` folder.
 
 ## Installation and Use
 ### Installing Module
@@ -54,15 +52,15 @@ Store the file in the `vendor/GateVertexTool` folder.
 3. Install and add pytesseract to path
 4. Download / clone this repository
 5. Navigate to the base of the repository
-6. Install setuptools `__pip install setuptools__`
-7. Install module `__pip install -e .__`
+6. Install setuptools `pip install setuptools`
+7. Install module `pip install -e .`
 8. Create the folder for the exported gating data in the location specified in the "GATE_CSV_DIR" path in the `gui_config.json` 
 
 ### Updating Module from Repository
 1. Pull changes from remote repository
 2. Activate virtual environment with previous install
 3. Navigate to the module directory
-4. Update module `__pip install -e . --upgrade__`
+4. Update module `pip install -e . --upgrade`
 
 ### Using Module
 1. cd to the `src` directory
