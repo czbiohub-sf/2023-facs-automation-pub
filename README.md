@@ -1,7 +1,9 @@
 # FACSAutomation
 
 ## Introduction
-This repository contains the Python application and custom **czfacsautomation** package that have been designed for automating the cell sorting on the Sony SH800S, by the CZ Biohub Bioengineering team. All utilities support Python 3.7. Note that newer versions of Python are not compatible.
+This repository contains the Python application and custom **czfacsautomation** package that have been designed for automating the cell sorting on the Sony SH800S, by the CZ Biohub - SF Bioengineering team. All utilities support Python 3.7. Note that newer versions of Python are not compatible.
+
+*This is a public snapshot of the FACS Automation repo as described in our 2023 preprint [here](https://www.biorxiv.org/content/10.1101/2023.03.24.534165v1).*
 
 Maintenance of this repo is the responsibility of Diane Wiener. Please direct any communication to Diane Wiener. 
 
@@ -13,7 +15,7 @@ CAD designs are provided in Onshape [here](https://cad.onshape.com/documents/c1a
 
 Software is licensed under BSD 3-Clause.
 
-Copyright Chan Zuckerberg Biohub 2023.
+Copyright Chan Zuckerberg Biohub - San Francisco 2023.
 
 ## Contents
 
