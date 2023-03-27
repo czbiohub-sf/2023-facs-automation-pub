@@ -251,7 +251,7 @@ def main(location = sys.argv[1], calibration = sys.argv[2:]) -> bool:
         # Now update config file with new calibration
         print("Updating configuration file.")
         try:
-            filelocation = '{}{}\{}'.format('..\\config\\hardware_config\\', location, 'hardware_config.json')
+            filelocation = '{}{}\{}'.format('config\\hardware_config\\', location, 'hardware_config.json')
             hw_config_file = resource_filename(Requirement.parse("czfacsautomation"), filelocation)
             with open(hw_config_file, 'r') as hw:
                 hardware = json.load(hw)
@@ -275,7 +275,8 @@ def main(location = sys.argv[1], calibration = sys.argv[2:]) -> bool:
         print("Attemping pick up and drop off of all tubes.")
         try:
             hc.zc._move_arm('y', hc.zaber_config['Sony_clearance'])
-            hc.zc._move_arm('z', hc.zaber_config['Sony_clearance'])
+            hc.zc._move_z_tube_housing(0, True)
+            hc.zc._move_arm('g', hc.zaber_config['claw']['tube_clearance'])
             for i in range(18):
                 hc.ac.toggle_motor(i)
                 sleep(5)

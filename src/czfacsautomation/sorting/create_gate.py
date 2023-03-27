@@ -56,7 +56,7 @@ class CreateGate:
         :type save_kde: str, optional
         """
         gui_config_file = resource_filename(
-            Requirement.parse("czfacsautomation"), "../config/gui_config.json"
+            Requirement.parse("czfacsautomation"), "config/gui_config.json"
         )
         with open(gui_config_file, "r") as f:
             self._gui_config = load(f)

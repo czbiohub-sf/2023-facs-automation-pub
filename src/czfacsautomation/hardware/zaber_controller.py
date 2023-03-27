@@ -5,7 +5,6 @@ from zaber_motion import Library, Units
 from zaber_motion.ascii import Connection, Axis
 from zaber_motion.exceptions.connection_failed_exception import ConnectionFailedException
 from zaber_motion.exceptions.movement_failed_exception import MovementFailedException
-from czfacsautomation.hardware.simulators.zaber_sim import Zaber
 
 
 class ZaberController():
@@ -48,6 +47,7 @@ class ZaberController():
                 self.gripper.settings.set("maxspeed", self.config['max_speed']['gripper'], Units.VELOCITY_MILLIMETRES_PER_SECOND)
                 logging.info('Homing all')
                 self.home_arm()
+                self._move_z_tube_housing(0, True)
             elif self.env == 'dev':
                 logging.info('Establishing connection with mock Zaber devices')
                 self.zaber = Zaber(self.config['port'])

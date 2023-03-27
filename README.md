@@ -5,7 +5,7 @@ This repository contains the Python application and custom **czfacsautomation** 
 
 *This is a public snapshot of the FACS Automation repo as described in our 2023 preprint [here](https://www.biorxiv.org/content/10.1101/2023.03.24.534165v1).*
 
-Maintenance of this repo is the responsibility of Diane Wiener. Please direct any communication to Diane Wiener. 
+Maintenance of this repo is the responsibility of Diane Wiener. Please direct any communication to Diane Wiener via creation of an Issue at the project repo [here](https://github.com/czbiohub/2023-facs-automation-pub/issues).
 
 This source describes Open Hardware, which is licensed under the CERN-OHL-W v2. 
 

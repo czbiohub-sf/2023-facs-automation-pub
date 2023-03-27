@@ -2,7 +2,6 @@ import logging
 import serial
 from time import sleep
 from typing import Dict, List, Optional, Union
-from czfacsautomation.hardware.simulators.arduino_sim import Arduino
 
 
 class ArduinoController():
