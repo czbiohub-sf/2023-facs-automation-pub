@@ -109,7 +109,7 @@ def main():
                         c.screenshot_last_sort(folder, loc) # Keeps the last exported sort in memory for scrolling faster
                         c.export_csv_and_close_sheet(loc=f"{abs_path}\\sortdata\\{exp_name}\\{sample_name}", scraper=True)
                         print("Getting gate vertices")
-                        get_cmd = run(['vendor/GateVertexTool', 'get', c.file_name[0],
+                        get_cmd = run(['GateVertexTool', 'get', c.file_name[0],
                                        c.file_name[1], c.file_name[2], 
                                        c.file_name[3]], stdout=PIPE)
                         if get_cmd.returncode == 0: #It was successful

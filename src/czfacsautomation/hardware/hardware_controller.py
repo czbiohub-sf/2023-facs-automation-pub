@@ -21,7 +21,7 @@ class HardwareController():
         :raises FileNotFoundError: loggings critical if the hardware config file not found
         """
         
-        self.filelocation = '{}{}\{}'.format('..\\config\\hardware_config\\', location, 'hardware_config.json')
+        self.filelocation = '{}{}\{}'.format('config\\hardware_config\\', location, 'hardware_config.json')
         hardware_config_file = resource_filename(Requirement.parse("czfacsautomation"), self.filelocation)
         try:
             with open(hardware_config_file, 'r') as f:

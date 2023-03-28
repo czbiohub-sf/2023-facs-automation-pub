@@ -57,7 +57,7 @@ class Gating():
         """
         
         log.info(f"Gate variables: {self.gate_variables}")
-        get_cmd = run(['vendor/GateVertexTool', 'get', self.gate_variables[0], 
+        get_cmd = run(['GateVertexTool', 'get', self.gate_variables[0], 
                     self.gate_variables[1], self.gate_variables[2], 
                     self.gate_variables[3]], stdout=PIPE)
         if self._is_successful(get_cmd.returncode):

@@ -44,8 +44,8 @@ class Controller():
         :type find_btns: bool
         """
         
-        self.img_file_loc = resource_filename(Requirement.parse("czfacsautomation"), "../config/gui_snippets/")
-        gui_config_file = resource_filename(Requirement.parse("czfacsautomation"), "../config/gui_config.json")
+        self.img_file_loc = resource_filename(Requirement.parse("czfacsautomation"), "config/gui_snippets/")
+        gui_config_file = resource_filename(Requirement.parse("czfacsautomation"), "config/gui_config.json")
         with open(gui_config_file, 'r') as f:
                 self._gui_config = load(f)
         self.image_flag = 0

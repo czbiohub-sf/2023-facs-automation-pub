@@ -10,7 +10,7 @@ setuptools.setup(
     packages=setuptools.find_packages(
         exclude=["*.tests", "*.tests.*","tests.*", "tests"]
     ),
-    python_requires='==3.7',
+    python_requires='==3.7.8',
     install_requires=[
         'matplotlib==3.4.2',
         'numpy>=1.20.3',

@@ -13,8 +13,9 @@ def main(location = sys.argv[1]):
     :raises FileNotFoundError: If json hardware config file is not found in the location the program quits
     """
         
-    filelocation = '{}{}\{}'.format('..\\config\\hardware_config\\', location, 'hardware_config.json')
+    filelocation = '{}{}\{}'.format('config\\hardware_config\\', location, 'hardware_config.json')
     hardware_config_file = resource_filename(Requirement.parse("czfacsautomation"), filelocation)
+    
     try:
         with open(hardware_config_file, 'r') as f:
             p = load(f)

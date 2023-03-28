@@ -1,5 +1,7 @@
 from json import load
+import certifi
 import logging
+import ssl
 from pkg_resources import Requirement, resource_filename
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError, SlackRequestError
@@ -17,7 +19,7 @@ class SlackFacs:
         :raises FileNotFoundError: Logs critical if the Slack config file is not found
         """
         self.location = '{}{}'.format('autofacs', location)
-        slack_config_file = resource_filename(Requirement.parse("czfacsautomation"),"../config/Slack_config.json")
+        slack_config_file = resource_filename(Requirement.parse("czfacsautomation"),"config/Slack_config.json")
         
         try:
             with open(slack_config_file, 'r') as f:
@@ -27,7 +29,8 @@ class SlackFacs:
             logging.critical('Config file not found')
         
         self.SLACK_BOT_TOKEN = self._slack_config['BOT_TOKEN'][self.location]
-        self.client = WebClient(token=self.SLACK_BOT_TOKEN)
+        ssl_context = ssl.create_default_context(cafile=certifi.where())
+        self.client = WebClient(token=self.SLACK_BOT_TOKEN, ssl=ssl_context)
         self.channel = self._slack_config['Channel_ID'][self.location]
         self.timestamp = ""
 

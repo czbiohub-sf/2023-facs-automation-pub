@@ -189,8 +189,8 @@ def _generate_report_page(rootdir, width, height, offset, label_size, expt_title
 
     # Make the labels
     draw = ImageDraw.Draw(new_im)
-    font = ImageFont.truetype("Arial Bold.ttf", 84)
-    title = ImageFont.truetype("Arial Bold.ttf", 200)
+    font = ImageFont.truetype("czfacsautomation/integration/Arial Bold.ttf", 84)
+    title = ImageFont.truetype("czfacsautomation/integration/Arial Bold.ttf", 200)
 
 
     # Label the experiment name
@@ -246,8 +246,8 @@ def generate_report(rootdir):
 
     # Make the labels
     draw = ImageDraw.Draw(new_im)
-    font = ImageFont.truetype("../src/czfacsautomation/integration/Arial Bold.ttf", 84)
-    title = ImageFont.truetype("../src/czfacsautomation/integration/Arial Bold.ttf", 200)
+    font = ImageFont.truetype("czfacsautomation/integration/Arial Bold.ttf", 84)
+    title = ImageFont.truetype("czfacsautomation/integration/Arial Bold.ttf", 200)
 
     # Label the experiment name
     draw.text((new_width//3, expt_title//3),rootdir, (0,0,0), font=font)
