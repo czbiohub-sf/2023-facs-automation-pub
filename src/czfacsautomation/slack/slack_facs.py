@@ -30,7 +30,13 @@ class SlackFacs:
         
         self.SLACK_BOT_TOKEN = self._slack_config['BOT_TOKEN'][self.location]
         ssl_context = ssl.create_default_context(cafile=certifi.where())
-        self.client = WebClient(token=self.SLACK_BOT_TOKEN, ssl=ssl_context)
+        
+        try:
+            self.client = WebClient(token=self.SLACK_BOT_TOKEN, ssl=ssl_context)
+        except Exception as error:
+            logging.critical(f"Slack Error: {error}. Problem when connecting to Slack client.")
+            raise
+        
         self.channel = self._slack_config['Channel_ID'][self.location]
         self.timestamp = ""
 
@@ -45,7 +51,7 @@ class SlackFacs:
         user = user.upper()
         return (user in self._slack_config['Member_ID'])
     
-    def sendMessage(self, state, user):
+    def sendMessage(self, state, user, inactive=None):
         """Post a message in the specified Slack channel based on the progress of the FACS automation
 
         :param state: the state of the automation process for which to look up the message to post
@@ -58,30 +64,33 @@ class SlackFacs:
         :rtype: str of the format '1234567890.012345']
         """        
         
-        slack_message = self._slack_config[state]['message']
-        contact = self._slack_config['Member_ID'][user]
+        if inactive is None:
+            slack_message = self._slack_config[state]['message']
+            contact = self._slack_config['Member_ID'][user]
         
-        if state == 'FACS_complete' or state == 'FACS_pause':
-            slack_message = f"{contact} {slack_message}"
+            if state == 'FACS_complete' or state == 'FACS_pause':
+                slack_message = f"{contact} {slack_message}"
 
-        try:
-            #link_names=True allows for @mentions, such as @channel
-            response = self.client.chat_postMessage(channel = self.channel, link_names=True, text=slack_message)
-            logging.critical(f"Slack Timestamp: {response['ts']}")
+            try:
+                #link_names=True allows for @mentions, such as @channel
+                response = self.client.chat_postMessage(channel = self.channel, link_names=True, text=slack_message)
+                logging.critical(f"Slack Timestamp: {response['ts']}")
         
-        except SlackApiError as e:
-            logging.critical(f"SlackAPI Error: {e.response['error']}")
+            except SlackApiError as e:
+                logging.critical(f"SlackAPI Error: {e.response['error']}")
             
-        except SlackRequestError as err:
-            logging.critical(f"SlackRequest Error: {err.response['error']}")
+            except SlackRequestError as err:
+                logging.critical(f"SlackRequest Error: {err.response['error']}")
         
-        except Exception as error:
-            logging.critical(f"Other Slack Error: {error}. Slack message did not post.")
+            except Exception as error:
+                logging.critical(f"Other Slack Error: {error}. Slack message did not post.")
             
-        if state == 'FACS_startup':
-           return(response["ts"])
+            if state == 'FACS_startup':
+                return(response["ts"])
+        else:
+            logging.critical('Not connected to Slack to post a message.')
             
-    def tubeStatusThread(self, tube_no: int, timestamp, start = True):
+    def tubeStatusThread(self, tube_no: int, timestamp, inactive=None, start=True):
         """Post a threaded message in the specified Slack channel with the current tube number progress
         
         :param tube_no: the current tube number
@@ -93,27 +102,32 @@ class SlackFacs:
         :raises SlackApiError: If message cannot be posted
         :raises SlackRequestError: If Slack cannot connect
         """       
-        tube_no += 1
         
-        if start:
-           slack_message = f"Starting Tube {tube_no}"
+        if inactive is None:
+            tube_no += 1
+        
+            if start:
+                slack_message = f"Starting Tube {tube_no}"
+            else:
+                slack_message = f"Finished Tube {tube_no}"
+        
+            try:
+                response = self.client.chat_postMessage(channel = self.channel, link_names=True, thread_ts = timestamp, text=slack_message)
+                logging.critical(f"Threaded Slack Timestamp: {response['ts']}")
+            
+            except SlackApiError as e:
+                logging.critical(f"SlackAPI Error: {e.response['error']}")
+            
+            except SlackRequestError as err:
+                logging.critical(f"SlackRequest Error: {err.response['error']}")
+        
+            except Exception as error:
+                logging.critical(f"Other Slack Error: {error}. Slack message did not post.")
         else:
-           slack_message = f"Finished Tube {tube_no}"
+            logging.critical('Not connected to Slack to post a message in the thread.')       
         
-        try:
-            response = self.client.chat_postMessage(channel = self.channel, link_names= True, thread_ts = timestamp, text=slack_message)
-            logging.critical(f"Threaded Slack Timestamp: {response['ts']}")
-            
-        except SlackApiError as e:
-            logging.critical(f"SlackAPI Error: {e.response['error']}")
-            
-        except SlackRequestError as err:
-            logging.critical(f"SlackRequest Error: {err.response['error']}")
         
-        except Exception as error:
-            logging.critical(f"Other Slack Error: {error}. Slack message did not post.")
-        
-    def uploadFile(self, filepath):
+    def uploadFile(self, filepath, inactive=None):
         """Upload files to the specified Slack channel
         
         :param filepath: the file to upload
@@ -122,34 +136,37 @@ class SlackFacs:
         :raises SlackRequestError: If Slack cannot connect
         """
         
-        try:
-            response = self.client.files_upload(file = filepath)
-            fileLink = response['file']['permalink']
-            logging.critical(f"Uploaded file: {filepath} to Slack at {fileLink}")
+        if inactive is None:
+            try:
+                response = self.client.files_upload(file = filepath)
+                fileLink = response['file']['permalink']
+                logging.critical(f"Uploaded file: {filepath} to Slack at {fileLink}")
             
-        except SlackApiError as e:
-            logging.critical(f"SlackAPI Error: {e.response['error']}")
+            except SlackApiError as e:
+                logging.critical(f"SlackAPI Error: {e.response['error']}")
             
-        except SlackRequestError as err:
-            logging.critical(f"SlackRequest Error: {err.response['error']}")
+            except SlackRequestError as err:
+                logging.critical(f"SlackRequest Error: {err.response['error']}")
         
-        except Exception as error:
-            logging.critical(f"Other Slack Error: {error}. Slack message did not post.")
+            except Exception as error:
+                logging.critical(f"Other Slack Error: {error}. Slack message did not post.")
             
-        try:    
-            msg = "Automation Paused or Stopped. Here is the screen shot:"
-            msg = msg + "<{}| >".format(fileLink)
-            posting = self.client.chat_postMessage(channel = self.channel, text = msg)
-            logging.critical(f"Posted file: {filepath}")
+            try:    
+                msg = "Automation Paused or Stopped. Here is the screen shot:"
+                msg = msg + "<{}| >".format(fileLink)
+                posting = self.client.chat_postMessage(channel = self.channel, text = msg)
+                logging.critical(f"Posted file: {filepath}")
         
-        except SlackApiError as e:
-            logging.critical(f"SlackAPI Error: {e.response['error']}")
+            except SlackApiError as e:
+                logging.critical(f"SlackAPI Error: {e.response['error']}")
             
-        except SlackRequestError as err:
-            logging.critical(f"SlackRequest Error: {err.response['error']}")
+            except SlackRequestError as err:
+                logging.critical(f"SlackRequest Error: {err.response['error']}")
         
-        except Exception as error:
-            logging.critical(f"Other Slack Error: {error}. Slack message did not post.")
+            except Exception as error:
+                logging.critical(f"Other Slack Error: {error}. Slack message did not post.")
+        else:
+            logging.critical('Not connected to Slack to post the image.')
     
     def deleteMessage(self, timestamp):
         """Delete a specific message in the specified Slack channel 

@@ -111,6 +111,7 @@ class FACSAutomation():
         self.stop = False
         self.interrupt = False
         self.error_flag = False
+        self.no_slack = None
         
         self.hc = None
         self.c = None
@@ -135,6 +136,13 @@ class FACSAutomation():
         
         try:
             self.slk = SlackFacs(self.location)
+        except:
+            log.info("Slack cannot connect.") 
+            self.no_slack = input("Do you want to proceed without Slack messaging (y/n)?")
+            if self.no_slack in ['n','N']:
+                raise Exception
+            
+        try:
             self.c = Controller()
         except:
             raise Exception
@@ -180,10 +188,9 @@ class FACSAutomation():
             file_name = "sort_samples.csv"
             log.info("Reading \'{}\' to obtain the sample metadata".format(file_name))
             self.data_dict = self.get_sample_metadata(file_name)
-            self.slk_timestamp = self.slk.sendMessage('FACS_startup', self.user)
+            self.slk_timestamp = self.slk.sendMessage('FACS_startup', self.user, self.no_slack)
             self.remaining_tubes = self.data_dict['Tube']
-            log.info("Remaining Tubes {}".format(self.remaining_tubes))
-            
+            log.info("Remaining Tubes {}".format(self.remaining_tubes))    
         except:
             log.info('Exiting automation program during setup.')
             raise Exception
@@ -376,11 +383,12 @@ class FACSAutomation():
         """Called if sorting finishes or software stopped
         """
         
+        log.info('Entered Done Protocol')
         self.cancel_threads()
         if self.interrupt:
-            self.slk.sendMessage('FACS_stopped', self.user)
+            self.slk.sendMessage('FACS_stopped', self.user, self.no_slack)
         else:
-            self.slk.sendMessage('FACS_complete', self.user)
+            self.slk.sendMessage('FACS_complete', self.user, self.no_slack)
         with(self.arduino_call_lock):  # Makes sure this is the last arduino call
             self.hc.run_complete()
         log.info("Finished done protocol call")
@@ -412,8 +420,8 @@ class FACSAutomation():
         tpause = tstp.strftime("%Y-%m-%d-%H-%M-%S")
         fpause = f"{log_filepath}/{tpause}_pause"
         self.c.screenshot_state(fpause)
-        self.slk.uploadFile(f"{fpause}.png")
-        self.slk.sendMessage('FACS_pause', self.user)
+        self.slk.uploadFile(f"{fpause}.png", self.no_slack)
+        self.slk.sendMessage('FACS_pause', self.user, self.no_slack)
         if self.arduino_call_lock.locked() is False:
             log.info('Pausing FACS Automation')
             self.pause_lock.acquire()
@@ -433,7 +441,7 @@ class FACSAutomation():
                 self.pause_lock.release()
                 if self.facs is not None:
                     pProcess(self.facs.pid).resume()
-                    self.slk.sendMessage('FACS_resume', self.user)
+                    self.slk.sendMessage('FACS_resume', self.user, self.no_slack)
             else:
                 log.info('FACS Automation already resumed')
         else:
@@ -450,13 +458,14 @@ class FACSAutomation():
             tpause = tstp.strftime("%Y-%m-%d-%H-%M-%S")
             fpause = f"{log_filepath}/{tpause}_pause"
             self.c.screenshot_state(fpause)
-            self.slk.uploadFile(f"{fpause}.png")
+            self.slk.uploadFile(f"{fpause}.png", self.no_slack)
             self.interrupt = True
             self.cancel_threads()
             if self.agitation_event is not None:
                 self.agitation_event.set() #If in the middle of a sorting run (will only occur when facs not None), then agitation will be an event -- no need to check if none
             if self.facs is not None:
                 pProcess(self.facs.pid).kill()
+            self.cleanup()
         else:
             log.info('System has already been stopped or was not in the middle of sorting')
 
@@ -481,7 +490,7 @@ class FACSAutomation():
             log.info('Sorting sample: {}'.format(sample_data['Name'][i]))
             log.info('From tube: {}'.format(sample_data['Tube'][i]))
             log.info('Into Well: {}'.format(sample_data['Well'][i]))
-            self.slk.tubeStatusThread(sample_data['Tube'][i], self.slk_timestamp, start=True)
+            self.slk.tubeStatusThread(sample_data['Tube'][i], self.slk_timestamp, self.no_slack, start=True)
 
             with(self.arduino_call_lock):  # moving hardware
                 self.hc.turn_off_on_motors() # Extra insurance that all motors are off
@@ -489,7 +498,7 @@ class FACSAutomation():
                     self.hc.start_sort(sample_data['Tube'][i])  # Make sure tube isn't agitated while pickup
                 except:
                     log.info('Zaber Exception')
-                    self.slk.sendMessage('FACS_Zaber_error', self.user)
+                    self.slk.sendMessage('FACS_Zaber_error', self.user, self.no_slack)
                     self.hc.run_complete()
                     raise Exception
             
@@ -529,13 +538,13 @@ class FACSAutomation():
                     self.hc.finish_sort(sample_data['Tube'][i])   
                 except:
                     log.info('Zaber Exception')
-                    self.slk.sendMessage('FACS_Zaber_error', self.user)
+                    self.slk.sendMessage('FACS_Zaber_error', self.user, self.no_slack)
                     self.cancel_threads()
                     self.hc.run_complete()
                     raise Exception
                     
             log.info('Completed sorting sample: {}'.format(sample_data['Name'][i]))
-            self.slk.tubeStatusThread(sample_data['Tube'][i], self.slk_timestamp, start=False)
+            self.slk.tubeStatusThread(sample_data['Tube'][i], self.slk_timestamp, self.no_slack, start=False)
 
     def schedule_next_agitation(self, curr_tube: int, next_tube: Optional[int]):
         """Calls the hardware controller function to agitate the next sample tube in queue
@@ -634,7 +643,7 @@ class FACSAutomation():
             log.critical("Error was found!")
             self.c.return_to_git()
             self.on_activate_pause()
-            self.slk.sendMessage('FACS_error', self.user)
+            self.slk.sendMessage('FACS_error', self.user, self.no_slack)
         else:
             log.info("No error was found.")
     
